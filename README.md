@@ -68,3 +68,38 @@ ARQuickLookController *controller = [[ARQuickLookController alloc] initWithSetti
 
 
 ```
+
+## Translation Keys
+
+```
+
+[
+"Initializing": "",
+"TRACKING UNAVAILABLE": "",
+"TRACKING NORMAL": "",
+"TRACKING LIMITED\nExcessive motion": "",
+"TRACKING LIMITED\nLow detail": "",
+"Recovering from interruption": "",
+"Unknown tracking state.": "",
+"Try slowing down your movement, or reset the session.": "",
+"Try pointing at a flat surface, or reset the session.": "",
+"Return to the location where you left off or try resetting the session.": "",
+"FIND A SURFACE TO PLACE AN OBJECT": "",
+"TRY MOVING LEFT OR RIGHT": "",
+"TAP + TO PLACE AN OBJECT": "",
+"SURFACE DETECTED": "",
+"CANNOT PLACE OBJECT\nTry moving left or right.": ""
+]
+
+
+```
+
+
+## Settings
+
+"url": "https://storage.googleapis.com/ar-answers-in-search-models/static/Tiger/model.glb",  // support be https or file scheme
+"format": "GLB",  // full options: ["GLB", "GLTF", "OBJ", "DAE", "ABC", "PLY", "STL", "USD", "USDZ", "USDA", "USDC", "SCN"]
+"max": 1,  // max size in all three dimensions in meters, models larger than this will be force resized to it.
+"gestures": ["scale": false, "rotate": true, "drag": true, "tap": true]  // enable or disable gestures in AR View
+
+
