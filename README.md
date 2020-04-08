@@ -97,7 +97,7 @@ ARQuickLookController *controller = [[ARQuickLookController alloc] initWithSetti
 
 ## Settings
 
-"url": "https://storage.googleapis.com/ar-answers-in-search-models/static/Tiger/model.glb",  // support be https or file scheme  
+"url": "https://storage.googleapis.com/ar-answers-in-search-models/static/Tiger/model.glb",  // support  https or file scheme  
   
 "format": "GLB",  // full options: ["GLB", "GLTF", "OBJ", "DAE", "ABC", "PLY", "STL", "USD", "USDZ", "USDA", "USDC", "SCN"]  
   
