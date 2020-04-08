@@ -1,0 +1,6 @@
+framework module Pods_ARQuickLook_Tests {
+  umbrella header "Pods-ARQuickLook_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

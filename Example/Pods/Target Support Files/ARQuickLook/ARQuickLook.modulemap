@@ -1,0 +1,6 @@
+framework module ARQuickLook {
+  umbrella header "ARQuickLook-umbrella.h"
+
+  export *
+  module * { export * }
+}

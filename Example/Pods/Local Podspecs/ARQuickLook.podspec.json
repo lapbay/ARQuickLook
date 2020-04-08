@@ -1,0 +1,32 @@
+{
+  "name": "ARQuickLook",
+  "version": "0.1.0",
+  "summary": "A short description of ARQuickLook.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/lapbay/ARQuickLook",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "lapbay": "lapbay@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/lapbay/ARQuickLook.git",
+    "tag": "0.1.0"
+  },
+  "social_media_url": "https://twitter.com/tapray",
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source_files": "ARQuickLook/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "ARKit"
+  ],
+  "dependencies": {
+    "GLTFSceneKit": [
+
+    ]
+  }
+}

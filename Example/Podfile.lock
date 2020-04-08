@@ -1,0 +1,23 @@
+PODS:
+  - ARQuickLook (0.1.0):
+    - GLTFSceneKit
+  - GLTFSceneKit (0.1.3)
+
+DEPENDENCIES:
+  - ARQuickLook (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - GLTFSceneKit
+
+EXTERNAL SOURCES:
+  ARQuickLook:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ARQuickLook: 8f2aa762f126f63a11c16cd8f3dcc3041b0f37d4
+  GLTFSceneKit: fbec7ef104128201bde53ac5bc37c8a05d764cdf
+
+PODFILE CHECKSUM: e1915a8677f7ec39557ebcb11e4ca46d0f5557a8
+
+COCOAPODS: 1.8.4

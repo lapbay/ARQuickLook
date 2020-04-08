@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ARQuickLook_Example' do
+  pod 'ARQuickLook', :path => '../'
+
+  target 'ARQuickLook_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
