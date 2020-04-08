@@ -56,5 +56,15 @@ controller.launchAR(self) {
 ```
 @import ARQuickLook;
 
+NSDictionary *translations = @{@"Initializing": @"Inicializando"};
+NSDictionary *settings = @{
+        @"url": @"https://storage.googleapis.com/ar-answers-in-search-models/static/Tiger/model.glb",
+        @"format": @"GLB",
+        @"max": @1,
+        @"gestures": @{@"scale": @true, @"rotate": @false, @"drag": @true, @"tap": @false}
+};
+ARQuickLookController *controller = [[ARQuickLookController alloc] initWithSettings: settings translations: translations onPrepared: nil];
+[controller launchAR: self completion: nil];
+
 
 ```

@@ -25,14 +25,14 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'lapbay' => 'lapbay@gmail.com' }
-  s.source           = { :git => 'https://github.com/lapbay/ARQuickLook.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/lapbay/ARQuickLook.git' }
   s.social_media_url = 'https://twitter.com/tapray'
 
   s.ios.deployment_target = '11.0'
 
   s.source_files = 'ARQuickLook/Classes/**/*'
   s.platform = :ios, '11.0'
-  s.requires_arc = true
+  s.swift_version = '5.0'
   s.pod_target_xcconfig = {
     "SWIFT_VERSION" => "5.0"
   }

@@ -8,7 +8,8 @@ Main view controller for the AR experience.
 import UIKit
 
 @available(iOS 13.0, *)
-public class ARQuickLookController {
+@objcMembers
+public class ARQuickLookController: NSObject {
     static let supportedScheme = ["http", "file"]
     static let supportedFormat = ["GLB", "GLTF", "OBJ", "DAE", "ABC", "PLY", "STL", "USD", "USDZ", "USDA", "USDC", "SCN"]
 

@@ -12,14 +12,17 @@
     "lapbay": "lapbay@gmail.com"
   },
   "source": {
-    "git": "https://github.com/lapbay/ARQuickLook.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/lapbay/ARQuickLook.git"
   },
   "social_media_url": "https://twitter.com/tapray",
   "platforms": {
-    "ios": "13.0"
+    "ios": "11.0"
   },
   "source_files": "ARQuickLook/Classes/**/*",
+  "swift_versions": "5.0",
+  "pod_target_xcconfig": {
+    "SWIFT_VERSION": "5.0"
+  },
   "frameworks": [
     "UIKit",
     "ARKit"
@@ -28,5 +31,6 @@
     "GLTFSceneKit": [
 
     ]
-  }
+  },
+  "swift_version": "5.0"
 }
