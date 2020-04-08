@@ -97,9 +97,13 @@ ARQuickLookController *controller = [[ARQuickLookController alloc] initWithSetti
 
 ## Settings
 
-"url": "https://storage.googleapis.com/ar-answers-in-search-models/static/Tiger/model.glb",  // support be https or file scheme
-"format": "GLB",  // full options: ["GLB", "GLTF", "OBJ", "DAE", "ABC", "PLY", "STL", "USD", "USDZ", "USDA", "USDC", "SCN"]
-"max": 1,  // max size in all three dimensions in meters, models larger than this will be force resized to it.
-"gestures": ["scale": false, "rotate": true, "drag": true, "tap": true]  // enable or disable gestures in AR View
+"url": "https://storage.googleapis.com/ar-answers-in-search-models/static/Tiger/model.glb",  // support be https or file scheme  
+  
+"format": "GLB",  // full options: ["GLB", "GLTF", "OBJ", "DAE", "ABC", "PLY", "STL", "USD", "USDZ", "USDA", "USDC", "SCN"]  
+  
+"max": 1,  // max size in all three dimensions in meters, models larger than this will be force resized to it.  
+  
+"gestures": ["scale": false, "rotate": true, "drag": true, "tap": true]  // enable or disable gestures in AR View  
+  
 
 
