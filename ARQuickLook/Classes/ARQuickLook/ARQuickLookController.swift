@@ -43,7 +43,7 @@ public class ARQuickLookController: NSObject {
             assert(url.starts(with: "http") || url.starts(with: "file"), "url must starts with http or file")
             self.settings["url"] = url
             guard let uri = URL(string: url) else {
-                assert(false, "invalid url")
+                fatalError("invalid url")
             }
             if uri.isFileURL {
                 path = uri

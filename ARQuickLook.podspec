@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ARQuickLook'
   s.version          = '0.1.0'
-  s.summary          = 'Alternative for Apple\'s AR Quick Look, with GLB/GLTF format support, and  https loader support.'
+  s.summary          = 'Alternative for Apple\'s AR Quick Look, with GLB/GLTF format support, and https loader support.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Alternative for Apple's AR Quick Look, with GLB/GLTF format support, and allows developers to load model not only from lcoal file system path, but also from remote server with https request.
                        DESC
 
   s.homepage         = 'https://github.com/lapbay/ARQuickLook'
