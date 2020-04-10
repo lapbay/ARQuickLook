@@ -31,6 +31,12 @@ ARQuickLook is available under the MIT license. See the LICENSE file for more in
 
 ## Usage
 
+### Add privacy usage declaration in Info.plist in Xcode project
+
+<key>NSCameraUsageDescription</key>
+<string>The camera is used for augmenting reality.</string>
+
+
 ### Swift
 ```
 import ARQuickLook

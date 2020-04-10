@@ -117,6 +117,7 @@ public class ARQuickLookController: NSObject {
     }
 
     public func launchAR(_ presenter: UIViewController?, completion: (() -> Void)? = nil) {
+        loadUrl()
         let ar = ViewController()
         ar.controller = self
         ar.modalPresentationStyle = .fullScreen

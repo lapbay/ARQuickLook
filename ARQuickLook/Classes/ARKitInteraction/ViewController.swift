@@ -161,7 +161,8 @@ class ViewController: UIViewController {
                 self.focusSquare.state = .detecting(raycastResult: result, camera: camera)
             }
             if !coachingOverlay.isActive {
-                addObjectButton.isHidden = false
+                // MARK: - ARPreview
+                addObjectButton.isHidden = virtualObjectLoader.loadedObjects.count != 0
             }
             statusViewController.cancelScheduledMessage(for: .focusSquare)
         } else {

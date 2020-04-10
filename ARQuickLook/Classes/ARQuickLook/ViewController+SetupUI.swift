@@ -68,8 +68,8 @@ extension ViewController {
 
         statusViewController.cancelScheduledMessage(for: .contentPlacement)
 
-        guard let ctl = controller else {return}
-        let object = AsyncVirtualObject(url: ctl.path!, format: ctl.settings["format"]!)!
+        guard let ctl = controller, let url = ctl.path else {return}
+        let object = AsyncVirtualObject(url: url, format: ctl.settings["format"]!)!
         if let m = ctl.settings["max"], let n = NumberFormatter().number(from: m)?.floatValue {
             object.maxSizeInMeters = n
         }
@@ -85,23 +85,6 @@ extension ViewController {
             object.mostRecentInitialPlacementResult = nil
             object.raycastQuery = nil
         }
-
-//        for (index, object) in VirtualObject.availableObjects.enumerated() {
-//            if (index <= lastIndex) {continue}
-//            if let query = sceneView.getRaycastQuery(for: object.allowedAlignment),
-//                let result = sceneView.castRay(for: query).first {
-//                object.mostRecentInitialPlacementResult = result
-//                object.raycastQuery = query
-//                showBundleObject(object)
-//                lastIndex = index
-//                return
-//            } else {
-//                object.mostRecentInitialPlacementResult = nil
-//                object.raycastQuery = nil
-//            }
-//        }
-//
-//        lastIndex = -1
     }
 
     // Set up UI by code
