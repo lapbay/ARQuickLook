@@ -34,7 +34,8 @@ class ViewController: UIViewController {
         let settings: Dictionary<String, Any> = [
             "url": url,
             "format": format,
-            "max": 0.1,
+            "max": 10,
+            "scale": 0.1,
             "gestures": ["scale": true, "rotate": false, "drag": true, "tap": false]
         ]
         let controller = ARQuickLookController(settings: settings)

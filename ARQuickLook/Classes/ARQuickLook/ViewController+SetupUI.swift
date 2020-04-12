@@ -70,11 +70,14 @@ extension ViewController {
 
         guard let ctl = controller, let url = ctl.path else {return}
         let object = AsyncVirtualObject(url: url, format: ctl.settings["format"]!)!
+        if let m = ctl.settings["zoom"], let n = NumberFormatter().number(from: m)?.floatValue {
+            object.zoom = n
+        }
         if let m = ctl.settings["max"], let n = NumberFormatter().number(from: m)?.floatValue {
             object.maxSizeInMeters = n
-        }
-        if object.maxSizeInMeters > 10 {
-            object.maxSizeInMeters = 10
+            if object.maxSizeInMeters > 10 {
+                object.maxSizeInMeters = 10
+            }
         }
         if let query = sceneView.getRaycastQuery(for: object.allowedAlignment),
             let result = sceneView.castRay(for: query).first {

@@ -14,6 +14,7 @@ import GLTFSceneKit
 class AsyncVirtualObject: VirtualObject {
     var format: String
     public var maxSizeInMeters: Float = 1
+    public var zoom: Float = 1
 
     public init?(url referenceURL: URL, format: String) {
         self.format = format
@@ -57,6 +58,7 @@ class AsyncVirtualObject: VirtualObject {
         for n in scene.rootNode.childNodes {
             node.addChildNode(n)
         }
+        node.scale = SCNVector3(zoom, zoom, zoom)
         let b = node.boundingBox
         let m = max(max(b.max.x - b.min.x, b.max.y - b.min.y), b.max.z - b.min.z)
         if m > maxSizeInMeters {

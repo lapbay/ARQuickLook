@@ -67,6 +67,7 @@ NSDictionary *settings = @{
         @"url": @"https://storage.googleapis.com/ar-answers-in-search-models/static/Tiger/model.glb",
         @"format": @"GLB",
         @"max": @1,
+        @"scale": @1,
         @"gestures": @{@"scale": @true, @"rotate": @false, @"drag": @true, @"tap": @false}
 };
 ARQuickLookController *controller = [[ARQuickLookController alloc] initWithSettings: settings translations: translations onPrepared: nil];
@@ -108,6 +109,8 @@ ARQuickLookController *controller = [[ARQuickLookController alloc] initWithSetti
 "format": "GLB",  // full options: ["GLB", "GLTF", "OBJ", "DAE", "ABC", "PLY", "STL", "USD", "USDZ", "USDA", "USDC", "SCN"]  
   
 "max": 1,  // max size in all three dimensions in meters, models larger than this will be force resized to it.  
+
+"scale": 1,  // scale the object on loaded.  
   
 "gestures": ["scale": false, "rotate": true, "drag": true, "tap": true]  // enable or disable gestures in AR View  
   
