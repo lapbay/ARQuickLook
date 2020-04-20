@@ -70,6 +70,7 @@ extension ViewController {
 
         guard let ctl = controller, let url = ctl.path else {return}
         let object = AsyncVirtualObject(url: url, format: ctl.settings["format"]!)!
+        print(ctl.settings)
         if let m = ctl.settings["zoom"], let n = NumberFormatter().number(from: m)?.floatValue {
             object.zoom = n
         }

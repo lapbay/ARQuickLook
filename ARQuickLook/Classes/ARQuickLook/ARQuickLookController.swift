@@ -22,7 +22,7 @@ public class ARQuickLookController: NSObject {
         "zoom": "1",
         "scale": "false",
         "rotate": "true",
-        "pan": "true",
+        "drag": "true",
         "tap": "true"
     ]
     var path: URL? = nil
@@ -30,18 +30,18 @@ public class ARQuickLookController: NSObject {
 
     public convenience init(
         settings: Dictionary<String, Any>,
-        translations: Dictionary<String, String>? = nil,
         onPrepared: ((_ success: Bool) -> Void)? = nil
     ) {
         self.init()
 
         if let format = settings["format"] as? String {
             assert(ARQuickLookController.supportedFormat.contains(format.uppercased()), "format not supported")
-            self.settings["format"] = format
+            self.settings["format"] = format.uppercased()
         }
 
         if let url = settings["url"] as? String {
-            assert(url.starts(with: "http") || url.starts(with: "file"), "url must starts with http or file")
+            let ul = url.lowercased()
+            assert(ul.starts(with: "http") || ul.starts(with: "file"), "url must starts with http or file")
             self.settings["url"] = url
             guard let uri = URL(string: url) else {
                 fatalError("invalid url")
@@ -56,7 +56,7 @@ public class ARQuickLookController: NSObject {
         }
 
         if let gestures = settings["gestures"] as? Dictionary<String, Bool> {
-            for gesture in ["scale", "rotate", "pan", "tap"] {
+            for gesture in ["scale", "rotate", "drag", "tap"] {
                 if gestures[gesture] != nil {
                     self.settings[gesture] = gestures[gesture]! ? "true" : "false"
                 }

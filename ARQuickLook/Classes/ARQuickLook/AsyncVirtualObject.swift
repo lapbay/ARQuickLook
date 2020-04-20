@@ -56,9 +56,9 @@ class AsyncVirtualObject: VirtualObject {
     func initNode(_ scene: SCNScene) {
         let node = SCNNode()
         for n in scene.rootNode.childNodes {
+            n.scale = SCNVector3(zoom, zoom, zoom)
             node.addChildNode(n)
         }
-        node.scale = SCNVector3(zoom, zoom, zoom)
         let b = node.boundingBox
         let m = max(max(b.max.x - b.min.x, b.max.y - b.min.y), b.max.z - b.min.z)
         if m > maxSizeInMeters {

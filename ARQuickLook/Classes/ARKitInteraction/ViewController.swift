@@ -65,7 +65,7 @@ class ViewController: UIViewController {
     var isRestartAvailable = true
     
     /// A serial queue used to coordinate adding or removing nodes from the scene.
-    let updateQueue = DispatchQueue(label: "com.example.apple-samplecode.arkitexample.serialSceneKitQueue")
+    let updateQueue = DispatchQueue(label: "com.tapray.plugins.arkc.serialSceneKitQueue")
     
     /// Convenience accessor for the session owned by ARSCNView.
     var session: ARSession {
