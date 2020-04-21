@@ -18,7 +18,7 @@ public class ARQuickLookController: NSObject {
     var settings: Dictionary<String, String> = [
         "url": "",
         "format": "",
-        "max": "1",
+        "max": "10",
         "zoom": "1",
         "scale": "false",
         "rotate": "true",
@@ -63,11 +63,11 @@ public class ARQuickLookController: NSObject {
             }
         }
 
-        if let m = settings["max"] {
+        if let m = settings["max"], !(m is NSNull) {
             self.settings["max"] = "\(m)"
         }
 
-        if let m = settings["scale"] {
+        if let m = settings["scale"], !(m is NSNull) {
             self.settings["zoom"] = "\(m)"
         }
     }
