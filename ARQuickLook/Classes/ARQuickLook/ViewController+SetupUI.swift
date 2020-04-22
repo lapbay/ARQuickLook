@@ -177,6 +177,9 @@ extension ViewController {
         if let settings = controller?.settings {
             virtualObjectInteraction.disableGestures(settings)
         }
+
+//        sceneView.autoenablesDefaultLighting = true
+//        sceneView.automaticallyUpdatesLighting = false
     }
 
     /// - Tag: App Lifecycle Observers
