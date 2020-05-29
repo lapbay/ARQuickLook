@@ -100,11 +100,12 @@ class ViewController: UIViewController {
         statusViewController.restartExperienceHandler = { [unowned self] in
             self.restartExperience()
         }
-        
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(showVirtualObjectSelectionViewController))
-        // Set the delegate to ensure this gesture is only used when there are no virtual objects in the scene.
-        tapGesture.delegate = self
-        sceneView.addGestureRecognizer(tapGesture)
+
+        // MARK: - ARPreview
+//        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(showVirtualObjectSelectionViewController))
+//        // Set the delegate to ensure this gesture is only used when there are no virtual objects in the scene.
+//        tapGesture.delegate = self
+//        sceneView.addGestureRecognizer(tapGesture)
     }
 
     override func viewDidAppear(_ animated: Bool) {
