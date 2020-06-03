@@ -23,7 +23,8 @@ public class ARQuickLookController: NSObject {
         "scale": "false",
         "rotate": "true",
         "drag": "true",
-        "tap": "true"
+        "tap": "true",
+        "lighting": "true",
     ]
     var path: URL? = nil
     private var loading = false
@@ -69,6 +70,10 @@ public class ARQuickLookController: NSObject {
 
         if let m = settings["scale"], !(m is NSNull) {
             self.settings["zoom"] = "\(m)"
+        }
+
+        if let m = settings["lighting"] as? Bool {
+            self.settings["lighting"] = m ? "true" : "false"
         }
     }
 

@@ -48,6 +48,8 @@ let settings: Dictionary<String, Any> = [
     "url": "https://storage.googleapis.com/ar-answers-in-search-models/static/Tiger/model.glb",
     "format": "GLB",
     "max": 1,
+    "scale": 0.1,
+    "lighting": false,
     "gestures": ["scale": true, "rotate": false, "drag": true, "tap": false]
 ]
 let controller = ARQuickLookController(settings: settings)
@@ -68,6 +70,7 @@ NSDictionary *settings = @{
         @"format": @"GLB",
         @"max": @1,
         @"scale": @1,
+        @"lighting": @true,
         @"gestures": @{@"scale": @true, @"rotate": @false, @"drag": @true, @"tap": @false}
 };
 ARQuickLookController *controller = [[ARQuickLookController alloc] initWithSettings: settings translations: translations onPrepared: nil];
@@ -112,6 +115,8 @@ ARQuickLookController *controller = [[ARQuickLookController alloc] initWithSetti
 
 "scale": 1,  // scale the object on loaded.  
   
+"lighting": true,  // set default lighting in AR scene or not.  
+
 "gestures": ["scale": false, "rotate": true, "drag": true, "tap": true]  // enable or disable gestures in AR View  
   
 

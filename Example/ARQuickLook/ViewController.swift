@@ -36,6 +36,7 @@ class ViewController: UIViewController {
             "format": format,
             "max": 10,
             "scale": 0.1,
+            "lighting": true,
             "gestures": ["scale": true, "rotate": false, "drag": true, "tap": false]
         ]
         let controller = ARQuickLookController(settings: settings)
@@ -74,6 +75,7 @@ class ViewController: UIViewController {
         presentLoadingIndicator()
 
         let uri = URL(string: "https://storage.googleapis.com/ar-answers-in-search-models/static/Tiger/model.glb")!
+
         let req = URLRequest(url: uri)
 
         let task = URLSession.shared.dataTask(with: req) {(data, response, error) in
