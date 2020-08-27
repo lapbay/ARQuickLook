@@ -92,33 +92,34 @@ extension ViewController: VirtualObjectSelectionViewControllerDelegate {
     // MARK: - VirtualObjectSelectionViewControllerDelegate
     // - Tag: PlaceVirtualContent
     func virtualObjectSelectionViewController(_: VirtualObjectSelectionViewController, didSelectObject object: VirtualObject) {
-        virtualObjectLoader.loadVirtualObject(object, loadedHandler: { [unowned self] loadedObject in
-            
-            do {
-                let scene = try SCNScene(url: object.referenceURL, options: nil)
-                self.sceneView.prepare([scene], completionHandler: { _ in
-                    DispatchQueue.main.async {
-                        self.hideObjectLoadingUI()
-                        self.placeVirtualObject(loadedObject)
-                    }
-                })
-            } catch {
-                fatalError("Failed to load SCNScene from object.referenceURL")
-            }
-            
-        })
-        displayObjectLoadingUI()
+        self.showObject(object as! AsyncVirtualObject)
+//        virtualObjectLoader.loadVirtualObject(object, loadedHandler: { [unowned self] loadedObject in
+//            do {
+//                let scene = try SCNScene(url: object.referenceURL, options: nil)
+//                self.sceneView.prepare([scene], completionHandler: { _ in
+//                    DispatchQueue.main.async {
+//                        self.hideObjectLoadingUI()
+//                        self.placeVirtualObject(loadedObject)
+//                    }
+//                })
+//            } catch {
+//                fatalError("Failed to load SCNScene from object.referenceURL")
+//            }
+//        })
+//        displayObjectLoadingUI()
     }
     
     func virtualObjectSelectionViewController(_: VirtualObjectSelectionViewController, didDeselectObject object: VirtualObject) {
-        guard let objectIndex = virtualObjectLoader.loadedObjects.firstIndex(of: object) else {
-            fatalError("Programmer error: Failed to lookup virtual object in scene.")
-        }
-        virtualObjectLoader.removeVirtualObject(at: objectIndex)
-        virtualObjectInteraction.selectedObject = nil
-        if let anchor = object.anchor {
-            session.remove(anchor: anchor)
-        }
+        self.removeObject(object)
+//        guard let objectIndex = virtualObjectLoader.loadedObjects.firstIndex(of: object) else {
+//            print("Programmer error: Failed to lookup virtual object in scene.")
+//            return
+//        }
+//        virtualObjectLoader.removeVirtualObject(at: objectIndex)
+//        virtualObjectInteraction.selectedObject = nil
+//        if let anchor = object.anchor {
+//            session.remove(anchor: anchor)
+//        }
     }
 
     // MARK: Object Loading UI

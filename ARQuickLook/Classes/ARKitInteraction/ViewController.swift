@@ -15,7 +15,8 @@ class ViewController: UIViewController {
     // MARK: IBOutlets
     // MARK: - ARPreview
     var controller: ARQuickLookController? = nil
-    
+    var availableObjects: [VirtualObject] = []
+
     let sceneView = VirtualObjectARView()
 
     let addObjectButton = UIButton(type: .custom)
@@ -161,9 +162,13 @@ class ViewController: UIViewController {
                 self.sceneView.scene.rootNode.addChildNode(self.focusSquare)
                 self.focusSquare.state = .detecting(raycastResult: result, camera: camera)
             }
+            // MARK: - ARPreview
             if !coachingOverlay.isActive {
-                // MARK: - ARPreview
-                addObjectButton.isHidden = virtualObjectLoader.loadedObjects.count != 0
+                if  controller?.models?.count ?? 0 > 0 {
+                    addObjectButton.isHidden = false
+                }else{
+                    addObjectButton.isHidden = virtualObjectLoader.loadedObjects.count != 0
+                }
             }
             statusViewController.cancelScheduledMessage(for: .focusSquare)
         } else {

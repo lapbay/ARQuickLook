@@ -15,6 +15,7 @@ class AsyncVirtualObject: VirtualObject {
     var format: String
     public var maxSizeInMeters: Float = 1
     public var zoom: Float = 1
+    public var data: Dictionary<String, String>?
 
     public init?(url referenceURL: URL, format: String) {
         self.format = format
@@ -27,29 +28,40 @@ class AsyncVirtualObject: VirtualObject {
 
     public func load(onLoaded: ((_ scene: SCNScene?) -> Void)?) {
         let uri = referenceURL
+        if uri.scheme?.lowercased().starts(with: "http") ?? false {
+            preload() { success in
+                self.loadLocally(onLoaded: onLoaded)
+            }
+        }else{
+            DispatchQueue.global(qos: .userInitiated).async {
+                self.loadLocally(onLoaded: onLoaded)
+            }
+        }
+    }
+
+    public func loadLocally(onLoaded: ((_ scene: SCNScene?) -> Void)?) {
+        let uri = referenceURL
         var mode = 0
         if (format == "GLB" || format == "GLTF") {
             mode = 1
         }
-        DispatchQueue.global(qos: .userInitiated).async {
-            do {
-                var node: SCNScene
-                switch mode {
-                case 1:
-                    let data: Data = try Data(contentsOf: uri)
-                    let sceneSource = GLTFSceneSource(data: data)
-                    node = try sceneSource.scene()
-                    break
-                default:
-                    node = try SCNScene(url: uri)
-                    break
-                }
-                self.initNode(node)
-                onLoaded?(node)
-            } catch {
-                print("loadFile: \(error.localizedDescription)")
-                onLoaded?(nil)
+        do {
+            var node: SCNScene
+            switch mode {
+            case 1:
+                let data: Data = try Data(contentsOf: uri)
+                let sceneSource = GLTFSceneSource(data: data)
+                node = try sceneSource.scene()
+                break
+            default:
+                node = try SCNScene(url: uri)
+                break
             }
+            self.initNode(node)
+            onLoaded?(node)
+        } catch {
+            print("loadFile: \(error.localizedDescription)")
+            onLoaded?(nil)
         }
     }
 
@@ -79,7 +91,39 @@ class AsyncVirtualObject: VirtualObject {
         }
 
     }
+
     override func unload() {
         childNodes.first?.removeFromParentNode()
     }
+
+    public func preload(onPrepared: ((_ success: Bool) -> Void)? = nil) {
+        let uri = referenceURL
+        if !(uri.scheme?.lowercased().starts(with: "http") ?? false) { return }
+
+        let req = URLRequest(url: uri)
+
+        let task = URLSession.shared.dataTask(with: req) {(data, response, error) in
+            guard let data = data else { return }
+            //let ret = self.loadData(data, format: fmt)
+            do {
+                let path = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("\(uri.lastPathComponent).\(self.format.lowercased())")
+                try data.write(to: path)
+                self.referenceURL = path
+                if (onPrepared != nil) {
+                    DispatchQueue.main.async {
+                        onPrepared?(true)
+                    }
+                }
+            } catch {
+                print("loadUrl: \(error.localizedDescription)")
+                if (onPrepared != nil) {
+                    DispatchQueue.main.async {
+                        onPrepared?(false)
+                    }
+                }
+            }
+        }
+        task.resume()
+    }
+
 }

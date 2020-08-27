@@ -16,7 +16,8 @@ extension ViewController {
     // MARK: - VirtualObjectSelectionViewControllerDelegate
     func removeObject(_ object: VirtualObject) {
         guard let objectIndex = virtualObjectLoader.loadedObjects.firstIndex(of: object) else {
-            fatalError("Programmer error: Failed to lookup virtual object in scene.")
+            print("Programmer error: Failed to lookup virtual object in scene.")
+            return
         }
         virtualObjectLoader.removeVirtualObject(at: objectIndex)
         virtualObjectInteraction.selectedObject = nil
@@ -28,9 +29,7 @@ extension ViewController {
     // - Tag: PlaceVirtualContent
     func showObject(_ object: AsyncVirtualObject) {
         virtualObjectLoader.loadNetworkVirtualObject(object, loadedHandler: { [unowned self] scene in
-//            let scene = SCNScene()
-//            scene.rootNode.addChildNode(object)
-            guard let loaded = scene else {return}
+            guard let loaded = scene else { return }
             self.sceneView.prepare([loaded], completionHandler: { _ in
                 DispatchQueue.main.async {
                     self.hideObjectLoadingUI()
@@ -38,7 +37,9 @@ extension ViewController {
                 }
             })
         })
-        displayObjectLoadingUI()
+        DispatchQueue.main.async {
+            self.displayObjectLoadingUI()
+        }
     }
 
     func showBundleObject(_ object: VirtualObject) {
@@ -60,13 +61,78 @@ extension ViewController {
         displayObjectLoadingUI()
     }
 
-    @objc private func toggleVirtualObject() {
+    @objc private func toggleVirtualObjects() {
         guard !addObjectButton.isHidden && !virtualObjectLoader.isLoading else { return }
+        guard let ctl = controller else { return }
+
+        statusViewController.cancelScheduledMessage(for: .contentPlacement)
+        if ctl.models?.count ?? 0 > 0 {
+            self.preparePopover()
+        }else if ctl.path != nil {
+            self.toggleVirtualObject()
+        }
+    }
+
+    func preparePopover() {
+        guard let ctl = controller, let models = ctl.models else { return }
+
+//        guard let url = ctl.path else { return }
+        if availableObjects.count != models.count {
+            for obj in models {
+                guard let url = URL(string: obj["m"]!) else { continue }
+                let object = AsyncVirtualObject(url: url, format: ctl.settings["format"]!)!
+                object.data = obj
+                if let m = ctl.settings["zoom"], let n = NumberFormatter().number(from: m)?.floatValue {
+                    object.zoom = n
+                }
+                if let m = ctl.settings["max"], let n = NumberFormatter().number(from: m)?.floatValue {
+                    object.maxSizeInMeters = n
+                    if object.maxSizeInMeters > 10 {
+                        object.maxSizeInMeters = 10
+                    }
+                }
+                if let query = sceneView.getRaycastQuery(for: object.allowedAlignment),
+                    let result = sceneView.castRay(for: query).first {
+                    object.mostRecentInitialPlacementResult = result
+                    object.raycastQuery = query
+                } else {
+                    object.mostRecentInitialPlacementResult = nil
+                    object.raycastQuery = nil
+                }
+                availableObjects.append(object)
+            }
+        }
+
+        let objectsViewController = VirtualObjectSelectionViewController()
+        objectsViewController.virtualObjects = availableObjects as! [AsyncVirtualObject]
+        objectsViewController.delegate = self
+        objectsViewController.sceneView = sceneView
+        objectsViewController.modalTransitionStyle = .coverVertical
+        objectsViewController.modalPresentationStyle = .popover
+        self.objectsViewController = objectsViewController
+
+//        guard let objectsViewController = self.objectsViewController else { return }
+        objectsViewController.updateObjectAvailability()
+        objectsViewController.selectedVirtualObjectRows.removeAll()
+        for object in virtualObjectLoader.loadedObjects {
+            guard let index = availableObjects.firstIndex(of: object) else { continue }
+            objectsViewController.selectedVirtualObjectRows.insert(index)
+        }
+
+        if let popoverController = objectsViewController.popoverPresentationController {
+            popoverController.delegate = self
+            popoverController.sourceView = addObjectButton
+            popoverController.sourceRect = addObjectButton.bounds
+        }
+        sceneView.pause(nil)
+        self.present(objectsViewController, animated: true) { }
+    }
+
+
+    @objc private func toggleVirtualObject() {
         for object in virtualObjectLoader.loadedObjects {
             removeObject(object)
         }
-
-        statusViewController.cancelScheduledMessage(for: .contentPlacement)
 
         guard let ctl = controller, let url = ctl.path else {return}
         let object = AsyncVirtualObject(url: url, format: ctl.settings["format"]!)!
@@ -131,7 +197,7 @@ extension ViewController {
             upperControlsView.trailingAnchor.constraint(equalTo: sa.trailingAnchor)
             ])
 
-        addObjectButton.addTarget(self, action: #selector(toggleVirtualObject), for: .touchUpInside)
+        addObjectButton.addTarget(self, action: #selector(toggleVirtualObjects), for: .touchUpInside)
         addObjectButton.tintColor = .white
         addObjectButton.setBackgroundImage(UIImage(systemName: "plus.circle.fill"), for: [])
         addObjectButton.translatesAutoresizingMaskIntoConstraints = false

@@ -15,6 +15,7 @@ public class ARQuickLookController: NSObject {
 
     public var translations: Dictionary<String, String>? = nil
     public var headers: Dictionary<String, String>? = nil
+    var models: Array<Dictionary<String, String>>? = nil
     var settings: Dictionary<String, String> = [
         "url": "",
         "format": "",
@@ -40,19 +41,21 @@ public class ARQuickLookController: NSObject {
             self.settings["format"] = format.uppercased()
         }
 
+        if let models = settings["models"] as? Array<Dictionary<String, String>> {
+            self.models = models
+        }
         if let url = settings["url"] as? String {
             let ul = url.lowercased()
             assert(ul.starts(with: "http") || ul.starts(with: "file"), "url must starts with http or file")
             self.settings["url"] = url
-            guard let uri = URL(string: url) else {
-                fatalError("invalid url")
-            }
-            if uri.isFileURL {
-                path = uri
-                ensureFormat()
-                onPrepared?(true)
-            }else if (onPrepared != nil){
-                loadUrl(onPrepared: onPrepared)
+            if let uri = URL(string: url) {
+                if uri.isFileURL {
+                    path = uri
+                    ensureFormat()
+                    onPrepared?(true)
+                }else if (onPrepared != nil){
+                    loadUrl(onPrepared: onPrepared)
+                }
             }
         }
 
@@ -61,9 +64,9 @@ public class ARQuickLookController: NSObject {
                 if gestures[gesture] != nil {
                     self.settings[gesture] = gestures[gesture]! ? "true" : "false"
                 }
+                self.settings[gesture] = "false"
             }
         }
-
         if let m = settings["max"], !(m is NSNull) {
             self.settings["max"] = "\(m)"
         }

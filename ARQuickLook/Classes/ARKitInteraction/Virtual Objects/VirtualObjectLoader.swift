@@ -17,8 +17,7 @@ class VirtualObjectLoader {
     private(set) var loadedObjects = [VirtualObject]()
     
     private(set) var isLoading = false
-    
-    // MARK: - Loading object
+
     // MARK: - ARPreview
     func loadNetworkVirtualObject(_ object: AsyncVirtualObject, loadedHandler: @escaping (SCNScene?) -> Void) {
         isLoading = true
@@ -30,6 +29,7 @@ class VirtualObjectLoader {
         }
     }
 
+    // MARK: - Loading object
     /**
      Loads a `VirtualObject` on a background queue. `loadedHandler` is invoked
      on a background queue once `object` has been loaded.
