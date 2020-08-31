@@ -7,93 +7,93 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		069AB2B27AAA2031F819BAAF545D0460 /* GLTFGlTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA2A015B305F5ECEEF5D250B6CB477A /* GLTFGlTF.swift */; };
-		0AA96E45F27C5E355A3D4855D2603445 /* GLTFShaderModifierSurface_pbrSpecularGlossiness_texture_doubleSidedWorkaround.shader in Resources */ = {isa = PBXBuildFile; fileRef = 0C7FF5593C2E42F811ABBBE06526A1D3 /* GLTFShaderModifierSurface_pbrSpecularGlossiness_texture_doubleSidedWorkaround.shader */; };
-		0F897349961016324FF3B9DBB1411494 /* GLTFShaderModifierSurface_alphaModeBlend.shader in Resources */ = {isa = PBXBuildFile; fileRef = 1AFC2647E29CE31F0B738A7B60124153 /* GLTFShaderModifierSurface_alphaModeBlend.shader */; };
-		13FD2E534CB5239D6D61BAF48FD149D6 /* GLTFGlTFid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39697D80BEB54A2EDDE9CDF42BC7FB14 /* GLTFGlTFid.swift */; };
+		0054D99F739FAA24F67865732D581410 /* GLTFSceneKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BFEBD7FD7A2EB5F215D6C15E66648C5 /* GLTFSceneKit-dummy.m */; };
+		021CBC1C7933535ACE0D301AB4E3AD90 /* GLTFKHRMaterialsPbrSpecularGlossiness_GLTFKHRMaterialsPbrSpecularGlossiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069D1B737BD3E14776B1A6737656F65B /* GLTFKHRMaterialsPbrSpecularGlossiness_GLTFKHRMaterialsPbrSpecularGlossiness.swift */; };
+		025AB9EE64D22E4E38034A96285184A8 /* GLTFUnarchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68930F955EB1F61ED5E27170674BE2DA /* GLTFUnarchiver.swift */; };
+		0454DB02A0DB94B07A4A1CF6CF00763B /* VirtualObjectInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98555EC6A1C588A8C650EBDA5C890FFF /* VirtualObjectInteraction.swift */; };
+		050DA3885D3B39CB7713531DD12EE912 /* GLTFTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FF53ACA25CA49DA719FAA76616062C /* GLTFTypes.swift */; };
+		061E02A69CD2BE5D8B8A913EAC156A64 /* GLTFShaderModifierSurface_pbrSpecularGlossiness_doubleSidedWorkaround.shader in Resources */ = {isa = PBXBuildFile; fileRef = 893C6F45D7C673CAE638F96587E7930D /* GLTFShaderModifierSurface_pbrSpecularGlossiness_doubleSidedWorkaround.shader */; };
+		072557BD0E67D04C642C22C7BDCD152E /* GLTFAccessorSparseValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26736E93FBDFAD893863E92188E44F9C /* GLTFAccessorSparseValues.swift */; };
+		0E1E60FF8FFC76D799113B00CBB83B7E /* GLTFFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030D4BB1B6B6FB21386DBC16DF0EB7DA /* GLTFFunctions.swift */; };
+		1133F6194D21514C2D08DD6F5871582A /* StatusViewController+SetupUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A626D63B4B35CCFC4C5FEA97646421 /* StatusViewController+SetupUI.swift */; };
+		11F3D38A053AE52A0FD415EF464DAAFD /* VirtualObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E7FFF16FE1BF1585A6B4F489DBC473 /* VirtualObject.swift */; };
+		1840AC5501E3019E81157E9383CB169A /* GLTFSkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1D65718442FB97B0A1E481950BEA56 /* GLTFSkin.swift */; };
 		1857910175B964AB5E4867E57D09384A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 807FE42F7B0B47F7F3E07934CBDF34E9 /* Foundation.framework */; };
-		1B900F4FEAC77D7CDD9D68B690B20B05 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F222C25645EEE9009C8C252F8629BDE0 /* ARKit.framework */; };
-		1C057B65EBCF7BD41B7FF77CE655F437 /* GLTFSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB545ED8182D3601AC500317DB38AA /* GLTFSampler.swift */; };
-		1DCDE81CD588BDC779D542741FAFA865 /* GLTFMaterialNormalTextureInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCF291BFEA4ECBABAB2D915C9F4F60 /* GLTFMaterialNormalTextureInfo.swift */; };
-		1F72E3F765BD3EF8F41CD2797D77704F /* GLTFAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB7F90913EB3E0C5E7F05BB489F14B9 /* GLTFAsset.swift */; };
+		1B2CB52D329FA7E5EE64C86D890344F1 /* GLTFGlTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA2A015B305F5ECEEF5D250B6CB477A /* GLTFGlTF.swift */; };
+		1DAF133BA735FC547628941A38235881 /* GLTFCameraPerspective.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88137DBA89824A9D79B6130DE0691FDD /* GLTFCameraPerspective.swift */; };
+		1F0DD643A8FA9AF77EF868D03984D8EB /* GLTFTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D33EADBC91FCB9607A872351D83D172 /* GLTFTexture.swift */; };
 		1F8A47DAE1FBFB435FCC06836FA06FA5 /* Pods-ARQuickLook_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2556C7D90FB71BA5A937B6FAD45A6102 /* Pods-ARQuickLook_Tests-dummy.m */; };
-		247ECEED977049896AFD8D3054029C40 /* GLTFFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030D4BB1B6B6FB21386DBC16DF0EB7DA /* GLTFFunctions.swift */; };
-		24C71C0B35C7A759A1A06585E183B6DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1343C4EA90E8FE991C287D31108A83DE /* UIKit.framework */; };
-		25D7100E02602343D7CF447407CA4CD9 /* GLTFAnimationChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60606803AB376A24C22E3EC0CD03FAE0 /* GLTFAnimationChannel.swift */; };
-		272E48FDC7AFBD43711AB096A6B6CC6D /* GLTFAnimationSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72815A3BC6DD395776A1DB7FE10A7718 /* GLTFAnimationSampler.swift */; };
-		276A25F84A011693382FA314155AA2A0 /* GLTFExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0203D09A91A1A523D8ED8571FE7927 /* GLTFExtension.swift */; };
-		297F2C3B11282BD05C6D7FD78859D79D /* GLTFGlTFProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F6163EC5815ADF0DC0CA24DA49F9BB /* GLTFGlTFProperty.swift */; };
-		2BB36ECE3B35EA21E6666126148AC1E8 /* ViewController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB296A77C566A36E5946F52F9E6B831 /* ViewController+Actions.swift */; };
-		336815644AC59537F5358B1E8256A0A8 /* GLTFMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E3FE6388156356090B6FF36FE4E0EB /* GLTFMaterial.swift */; };
-		359BFAE4E676F8A489687C60C8C84FD1 /* StatusViewController+SetupUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADE1FA895869E911B1A9169BAB84403 /* StatusViewController+SetupUI.swift */; };
-		36C45F87015729DADFB51DBA795DEC6E /* GLTFSceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09FD3B748512626B6B0881541FCC2320 /* GLTFSceneKit.framework */; };
-		3AEC6E769D63602AAB1A6740CA1238A0 /* GLTFMaterialOcclusionTextureInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0206F93FB1AD7BC0297C74112045D160 /* GLTFMaterialOcclusionTextureInfo.swift */; };
-		3CEAF0A86F29B0C1BF4F4951E2783D9E /* GLTFSceneKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BFEBD7FD7A2EB5F215D6C15E66648C5 /* GLTFSceneKit-dummy.m */; };
-		40EB0DD56DB30B90210D1C4AB820A5EF /* GLTFBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD300FA38901C0C1DEEFEC3F7ED7305 /* GLTFBuffer.swift */; };
-		40F5EE4345334AD187F3E39EB443F98D /* GLTFAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99ED4A24BCCD693C9ACF1B511473096 /* GLTFAccessor.swift */; };
-		4177276E9EF8D6D75CB67F65B239AC8C /* GLTFKHRMaterialsCommon_GLTFKHRMaterialsCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66482631EEB8C31DC5DD5B6DF86C3411 /* GLTFKHRMaterialsCommon_GLTFKHRMaterialsCommon.swift */; };
-		449BA15E16ED8FE248A132F943C31428 /* GLTFExtras.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A52C67A6AC2CFE69FAA793D948ACF9 /* GLTFExtras.swift */; };
-		4BC0CD09D7CB12FF908AB27A1C9D72F3 /* GLTFSceneSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1D22C5900FDC0631D25F2B838E33ED /* GLTFSceneSource.swift */; };
-		4E4B7A75122EAB1E268FB9F57ABEA64B /* ARQuickLook-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FB232FD8084191DA1DA8316D642209 /* ARQuickLook-dummy.m */; };
-		5387993331C6A3B2432A801E67F8B89B /* GLTFAccessorSparse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA0C491C708466B692F9BC5CF3E2813 /* GLTFAccessorSparse.swift */; };
-		553538D4960653D93214703506217025 /* GLTFMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DEAA832C2BE663D73A85B9792AD5D0 /* GLTFMesh.swift */; };
-		55DECD83B97D37D2933D93366E3CF924 /* ExtensionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C24664E797B76C256ABD5293073B115 /* ExtensionList.swift */; };
-		56577AD5868CA5E0C833D722814A919B /* GLTFNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E85DADC23BBA0667744F5FA3CF646C /* GLTFNode.swift */; };
-		58523DD89F3051A386798FAC28002181 /* ThresholdPanGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2177AAC501F5E44BB0CE4D0A192F2B /* ThresholdPanGesture.swift */; };
-		6096287B523165A87686CE83BD9DE54A /* GLTFScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A189FD88AF04E479D22D79960D2F9F96 /* GLTFScene.swift */; };
-		6283C0EFB4CFAFFB95209ABCE03016BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 807FE42F7B0B47F7F3E07934CBDF34E9 /* Foundation.framework */; };
-		62F2508EC4A8CBEBD65FE3C7939E7B4D /* ViewController+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC3582844D0D3B68C5053B6BD1D615 /* ViewController+ARSCNViewDelegate.swift */; };
-		656B590144C3ADD6540ED5ED2FB36C27 /* VirtualObjectSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7ABE2694858106B023FC1EE989FA54 /* VirtualObjectSelection.swift */; };
+		20F34513E9B9900181B1F83724EF8983 /* GLTFAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB7F90913EB3E0C5E7F05BB489F14B9 /* GLTFAsset.swift */; };
+		2907313DE5238123F396108187F0A45C /* VirtualObjectInteractionScalable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF963B27ACFBA5498DB9C60846FB8A /* VirtualObjectInteractionScalable.swift */; };
+		2CBF9343615424724589FA1A1B0E2ECC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DACFBD8255F926D8FA631A5CE380129 /* ViewController.swift */; };
+		2F52C989B492CFDC7F87DF9D87635B2D /* GLTFShaderModifierSurface_pbrSpecularGlossiness_texture_doubleSidedWorkaround.shader in Resources */ = {isa = PBXBuildFile; fileRef = 0C7FF5593C2E42F811ABBBE06526A1D3 /* GLTFShaderModifierSurface_pbrSpecularGlossiness_texture_doubleSidedWorkaround.shader */; };
+		2FBAE4C55F3A529169A4E99D23360782 /* GLTFBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD300FA38901C0C1DEEFEC3F7ED7305 /* GLTFBuffer.swift */; };
+		37EA0CA05156018C61EF59D3C082EE59 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEBE51491AEF19BBA40073ADF281BE /* StatusViewController.swift */; };
+		38493B07418FD21D9D7ADCDED20CEAD3 /* VirtualObjectLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2C8072206205E868DB8E181A85F6BA /* VirtualObjectLoader.swift */; };
+		387D39D5E312749508D48F39CA5DD6E4 /* GLTFMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DEAA832C2BE663D73A85B9792AD5D0 /* GLTFMesh.swift */; };
+		399873A1FDEA41CFD8A01F574A77875B /* GLTFSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB545ED8182D3601AC500317DB38AA /* GLTFSampler.swift */; };
+		3AC13AE783C4BCD7478B53573E334652 /* GLTFGlTFProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F6163EC5815ADF0DC0CA24DA49F9BB /* GLTFGlTFProperty.swift */; };
+		3E2D156844BAFF407D393A2EE4ECB1DE /* GLTFMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E3FE6388156356090B6FF36FE4E0EB /* GLTFMaterial.swift */; };
+		3E642D4992A68AAF36AE93F918CD04C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 807FE42F7B0B47F7F3E07934CBDF34E9 /* Foundation.framework */; };
+		406946CB3835D5C692635A8DE9A7EFC1 /* GLTFMaterialOcclusionTextureInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0206F93FB1AD7BC0297C74112045D160 /* GLTFMaterialOcclusionTextureInfo.swift */; };
+		453EFB9A03A47538D8D254899CEA331C /* GLTFAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99ED4A24BCCD693C9ACF1B511473096 /* GLTFAccessor.swift */; };
+		4892F553CE5E88D50D8869A44D142639 /* GLTFExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0203D09A91A1A523D8ED8571FE7927 /* GLTFExtension.swift */; };
+		571A05BD41DCEA9E96052D4D8192524C /* GLTFCameraOrthographic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079C77D2C78204A3FAB6BBDC06136C08 /* GLTFCameraOrthographic.swift */; };
+		585E4D5A2E840AA7D7D9B6B0C8208CC1 /* ViewController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1754916FBFF9D3777C9CD60B24AB5F8 /* ViewController+Actions.swift */; };
+		5F8F9C6E30646563CFF18C4C7EEA2EEB /* ViewController+SetupUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF1E8C601FB49F6DA3DF0FBBF0E3620 /* ViewController+SetupUI.swift */; };
+		60741F09FDDC83F3EB4B6359A9B6DB01 /* GLTFSceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09FD3B748512626B6B0881541FCC2320 /* GLTFSceneKit.framework */; };
+		609799E7ADAD5708FDCDC5473A2602EC /* GLTFSceneSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1D22C5900FDC0631D25F2B838E33ED /* GLTFSceneSource.swift */; };
+		60FA7769C66D00C433C1EADB641D66EF /* GLTFMaterialNormalTextureInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCF291BFEA4ECBABAB2D915C9F4F60 /* GLTFMaterialNormalTextureInfo.swift */; };
+		64BE3DCBFAB9FFCBE62CF84724CC4D72 /* ViewController+ObjectSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D593263DEC1B4CC443AEDEE5B51111C /* ViewController+ObjectSelection.swift */; };
+		64C27B7138D014B871EE37AD5219550C /* FocusSquareSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3807341A3DCF46D179E25657542C3D8 /* FocusSquareSegment.swift */; };
+		65E15CF3BBA5A8878BE52D6383C4439A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1343C4EA90E8FE991C287D31108A83DE /* UIKit.framework */; };
 		6654AB526BA14FD66B89599C86FD654A /* Pods-ARQuickLook_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB80883EC546A4B5E69E4084BA9DB3A /* Pods-ARQuickLook_Example-dummy.m */; };
+		6725A205EE2A454228521A2387968F58 /* GLTFAccessorSparseIndices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900D07B177DDD938B757A48E2372F90 /* GLTFAccessorSparseIndices.swift */; };
+		68526BB090F93679F3E0788AB220DD24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 807FE42F7B0B47F7F3E07934CBDF34E9 /* Foundation.framework */; };
 		69DC46AEF6F1E635ACF02023C893C852 /* Pods-ARQuickLook_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 313446182F17162BE5CBEDF053A4EF36 /* Pods-ARQuickLook_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A714292D80750B0E708CD856095BBA5 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC6A026DD0BDC6DAAE70F620256CB02 /* StatusViewController.swift */; };
-		6DE26571890783B0E622762158B19CCC /* AsyncVirtualObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4107D01ED27C3BEAF313DDD7501A0560 /* AsyncVirtualObject.swift */; };
-		6DF3462136E5D07CB7678470B3C177D3 /* GLTFCameraPerspective.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88137DBA89824A9D79B6130DE0691FDD /* GLTFCameraPerspective.swift */; };
-		6E016B5664F92559B85FD792EB58A599 /* ViewController+SetupUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1EF7ECC63B37F80A7FB11990B935DE /* ViewController+SetupUI.swift */; };
-		73D806EBB70A79B8E2198AC2ABBA703C /* ARQuickLook-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AFB3897397D8FE210CA485B1A11D20E5 /* ARQuickLook-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		757169D4DCA2BD6FC9B5106F75131D6D /* GLTFAnimationChannelTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C5F9EE5C74B475BC70DA6D92FC11D4 /* GLTFAnimationChannelTarget.swift */; };
-		762914205DDE1FEF62E84B37AA4673F0 /* GLTFTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D33EADBC91FCB9607A872351D83D172 /* GLTFTexture.swift */; };
-		7732CD76197E1E7BCE5BFCB59246F8F5 /* VirtualObjectInteractionScalable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8670B1C03BAC2D09CF05EC76A69ACD5 /* VirtualObjectInteractionScalable.swift */; };
-		782CF384E84493EDE2DC6FBBEB45AA6E /* ARQuickLookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB414EFFA53CA7782C5074AB528C3AEF /* ARQuickLookController.swift */; };
-		78BB4DD75D281611CD2616AE3E22E3C7 /* VirtualObjectInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA27A6390E4369068CAF81B6301F8D9 /* VirtualObjectInteraction.swift */; };
-		7A80A20382D5D233A9E4977B5F1C6603 /* FocusSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551D45FFF993F00DBED3770E9BDDF83F /* FocusSquare.swift */; };
-		7B182B72E801FF373D0791A148712BAA /* GLTFAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075AD0F1435AA367257D752CE00F4860 /* GLTFAnimation.swift */; };
-		8438CDFCE3FAB25E72F346B573B9BEB5 /* GLTFAccessorSparseIndices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900D07B177DDD938B757A48E2372F90 /* GLTFAccessorSparseIndices.swift */; };
-		85325A3C9D8F25CD9C486C8F6A9E74F1 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AD5DD39CFF3E0FD3C5A02166469CBA /* Utilities.swift */; };
-		8B5E5F9D4ED276E4361521C59ACBB0CD /* GLTFCameraOrthographic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079C77D2C78204A3FAB6BBDC06136C08 /* GLTFCameraOrthographic.swift */; };
-		8CB664965B25812A28F0617C98283EDE /* GLTFUnarchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68930F955EB1F61ED5E27170674BE2DA /* GLTFUnarchiver.swift */; };
-		981A2AEAE5404C97D6DEB12D5152B6AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 807FE42F7B0B47F7F3E07934CBDF34E9 /* Foundation.framework */; };
-		9F85AB1080BF9C00390E0B068743E268 /* VirtualObjectLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F15D7682FE36E8924094AEAF4B2C574 /* VirtualObjectLoader.swift */; };
+		6E3E94D7AD1DE1A70D56832B485DA97D /* ViewController+CoachingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C71A62A3473249E58F3EC8BB2572A8 /* ViewController+CoachingOverlay.swift */; };
+		83F4417142559475E905B950DA35367E /* GLTFTextureInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEB2D37B7F7F384787B522A40DF53FF /* GLTFTextureInfo.swift */; };
+		84AE52EC16551564B0499E013E3B1737 /* GLTFGlTFChildOfRootProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634736E2631B89810D65BDAF8AEB6EB9 /* GLTFGlTFChildOfRootProperty.swift */; };
+		8666B78965437766354DE29A16293B5C /* ARQuickLookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD0D789C3C05E0BDE8E5450EA53D4BB /* ARQuickLookController.swift */; };
+		90A1879D0CCBFF487EFCFEAEA222CFDD /* GLTFScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A189FD88AF04E479D22D79960D2F9F96 /* GLTFScene.swift */; };
+		92B511722A51B0349E3B7096805807C6 /* GLTFSceneKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2137C1693AC732CBE68AF773BBFCFA1 /* GLTFSceneKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		934C2B14A0FC2B86BE311F572AE3C93C /* GLTFMeshPrimitive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E12506A62C09BA1A1453BA6FA209950 /* GLTFMeshPrimitive.swift */; };
+		9653CD3F391619EB17B116C8F5DA59CF /* ThresholdPanGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9D8D69B528DD7A6C5065946DB0B22D /* ThresholdPanGesture.swift */; };
+		9CECAE09980651A79200FD0DB3F3711A /* AsyncVirtualObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2540F717BA878FDCBE2A08CB809296E2 /* AsyncVirtualObject.swift */; };
+		A0987235474DD47487AD65E5F6AD626B /* VirtualObjectSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67CE88DF7E7DC34C7BDCF9A3EBF3B2A /* VirtualObjectSelection.swift */; };
 		A11B9E36714021EADFDA390EA37960B3 /* Pods-ARQuickLook_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C53A93554D30F3EE6FE51220826A5F2 /* Pods-ARQuickLook_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A2D1C1412F09CB20B7A231FC31721ED9 /* ViewController+CoachingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69825F5F092B3B8919A90A8AC1C531D1 /* ViewController+CoachingOverlay.swift */; };
-		A5F6D5D57DEA5F65668EBDF99A8F49DB /* VirtualObjectARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E41380CDCAC476AB1BA612A74CB7C45 /* VirtualObjectARView.swift */; };
-		AC49B9295A174AA9F28669CA844A7FAC /* GLTFCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75526A573FCECA0C9B8956A9F742B115 /* GLTFCamera.swift */; };
+		A20F8936F76B03CE49920789EAF5B5FA /* ARQuickLook-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C4A480FC96415A5BB1514C06760CB6 /* ARQuickLook-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3BE4119A9A3C664639A18D262475E9F /* GLTFKHRMaterialsCommon_GLTFKHRMaterialsCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66482631EEB8C31DC5DD5B6DF86C3411 /* GLTFKHRMaterialsCommon_GLTFKHRMaterialsCommon.swift */; };
+		AA1C5E52FBF356A315134B146059BE3C /* GLTFAnimationChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60606803AB376A24C22E3EC0CD03FAE0 /* GLTFAnimationChannel.swift */; };
+		AC3303BAA7AC479BCFD03D0994C2D10C /* VirtualObjectARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B7BF18331F0B8E3BDA5975F94DBF74 /* VirtualObjectARView.swift */; };
 		B182628F1E54B2635925285EC5546343 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 807FE42F7B0B47F7F3E07934CBDF34E9 /* Foundation.framework */; };
-		B995355315E0676FD21708AAB8C03032 /* VirtualObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB98D71A858677A9833514766C81497 /* VirtualObject.swift */; };
-		BA3676A966FF870C94CCCAD4FD8F389F /* GLTFSceneKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2137C1693AC732CBE68AF773BBFCFA1 /* GLTFSceneKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BD6CEBCD511214DDECFD9852F26753D9 /* GLTFTextureInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEB2D37B7F7F384787B522A40DF53FF /* GLTFTextureInfo.swift */; };
-		BE1C1C241B7FB91A39829A5A2D5E84BF /* GLTFSkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1D65718442FB97B0A1E481950BEA56 /* GLTFSkin.swift */; };
-		C5BBD64BB79A78EA0AB99DE847904FAB /* GLTFMaterialPbrMetallicRoughness.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480769FED22A78CCCA86CFDC1C873E2 /* GLTFMaterialPbrMetallicRoughness.swift */; };
-		C7975AFF2147559794495995C7BA1103 /* GLTFMeshPrimitive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E12506A62C09BA1A1453BA6FA209950 /* GLTFMeshPrimitive.swift */; };
-		CEB34E0282409EC338DD75CB12680F79 /* GLTFShaderModifierSurface_pbrSpecularGlossiness_doubleSidedWorkaround.shader in Resources */ = {isa = PBXBuildFile; fileRef = 893C6F45D7C673CAE638F96587E7930D /* GLTFShaderModifierSurface_pbrSpecularGlossiness_doubleSidedWorkaround.shader */; };
-		CF0C6B9A64018CDBD956D8E8E422563E /* GLTFShaderModifierSurface_pbrSpecularGlossiness.shader in Resources */ = {isa = PBXBuildFile; fileRef = 8936C4A2F2D1B3FD76044307CEA87338 /* GLTFShaderModifierSurface_pbrSpecularGlossiness.shader */; };
-		D0FFCA109586DB05E6AF2355D5E8BEA4 /* GLTFShaderModifierSurface.shader in Resources */ = {isa = PBXBuildFile; fileRef = 39B6E5F1787D2DFC44C4508BB1822CDB /* GLTFShaderModifierSurface.shader */; };
-		D672117BFC88F06B070CD4AA35EF0974 /* GLTFGlTFChildOfRootProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634736E2631B89810D65BDAF8AEB6EB9 /* GLTFGlTFChildOfRootProperty.swift */; };
-		D8B4F9B908FA7FF6DD61A4E01223DFC1 /* GLTFShaderModifierSurface_doubleSidedWorkaround.shader in Resources */ = {isa = PBXBuildFile; fileRef = BCAAD84BAE6A2D51A55052BDEF6320AB /* GLTFShaderModifierSurface_doubleSidedWorkaround.shader */; };
-		E36A5315DA7DFBA0A436DA45C51BAD7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E98F961079A17F3C5F6FE3700F7E59E /* ViewController.swift */; };
-		E44A17D66A3A6B3D7FFF5AF51F84625D /* FocusSquareSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8D97F2CFB918BD9448B19B53D9233 /* FocusSquareSegment.swift */; };
-		E5C03CCD3032CD195BABAD95AA9FBCD6 /* GLTFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFD600A7D617D03AA34636FD040ADBD /* GLTFImage.swift */; };
-		ED585D36DCD671B00A6BF22D3335AC94 /* GLTFAccessorSparseValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26736E93FBDFAD893863E92188E44F9C /* GLTFAccessorSparseValues.swift */; };
-		EE48472BED6B699A1B569EF1593F2505 /* GLTFBufferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11EE402119DF72818919C33B8AF8B52 /* GLTFBufferView.swift */; };
-		EF09F91AA982143E556B9BA4A9B048F2 /* GLTFErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EDECF901462DE37EDE36326ABFF1A7 /* GLTFErrors.swift */; };
-		F4555071BC60ECBE17BB4BB6902C3A6D /* GLTFShaderModifierFragment_alphaCutoff.shader in Resources */ = {isa = PBXBuildFile; fileRef = C5E35DE4235407F54F37C1E76CD49F17 /* GLTFShaderModifierFragment_alphaCutoff.shader */; };
-		F96D592C1CB355D65C7E12C5839DAA92 /* GLTFKHRMaterialsPbrSpecularGlossiness_GLTFKHRMaterialsPbrSpecularGlossiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069D1B737BD3E14776B1A6737656F65B /* GLTFKHRMaterialsPbrSpecularGlossiness_GLTFKHRMaterialsPbrSpecularGlossiness.swift */; };
-		FA53330592C897CD8CAACDA0ACBE6C6B /* GLTFTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FF53ACA25CA49DA719FAA76616062C /* GLTFTypes.swift */; };
-		FA7F1A39EC755239BCD7F37E78B5B713 /* ViewController+ObjectSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B818E591E0AE6DB8D946FB212E90071 /* ViewController+ObjectSelection.swift */; };
+		B7593F2514A729A91B34069A2F704A25 /* GLTFAccessorSparse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA0C491C708466B692F9BC5CF3E2813 /* GLTFAccessorSparse.swift */; };
+		B823599608E5F8C0CC19D772B8A6D8E9 /* GLTFErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EDECF901462DE37EDE36326ABFF1A7 /* GLTFErrors.swift */; };
+		B9D6DDD1EAEA157E863B62C7BD7BE137 /* GLTFMaterialPbrMetallicRoughness.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480769FED22A78CCCA86CFDC1C873E2 /* GLTFMaterialPbrMetallicRoughness.swift */; };
+		BB7CB664CDA9901702BD6B010A945CC2 /* ARQuickLook-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 195264CD5B905E8471B8E52EDAD71FFA /* ARQuickLook-dummy.m */; };
+		BD73566F463BB28885D495CB86B5131F /* GLTFExtras.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A52C67A6AC2CFE69FAA793D948ACF9 /* GLTFExtras.swift */; };
+		C23778E7E595509B3B9213910F595405 /* GLTFShaderModifierFragment_alphaCutoff.shader in Resources */ = {isa = PBXBuildFile; fileRef = C5E35DE4235407F54F37C1E76CD49F17 /* GLTFShaderModifierFragment_alphaCutoff.shader */; };
+		C24C3F25593292D59E3E3F513B539F8F /* GLTFAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075AD0F1435AA367257D752CE00F4860 /* GLTFAnimation.swift */; };
+		C42F2AD3B2E4D496ADFE3ED34E96AB01 /* ViewController+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1697EC85F6398D1F85059F005197D2 /* ViewController+ARSCNViewDelegate.swift */; };
+		C7D96FD4135DE89DD663D553BEBCBFEE /* GLTFAnimationSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72815A3BC6DD395776A1DB7FE10A7718 /* GLTFAnimationSampler.swift */; };
+		D94D2A2783CB8B7A0A4EBC0B433C4A3F /* ExtensionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C24664E797B76C256ABD5293073B115 /* ExtensionList.swift */; };
+		DC38EFE208B994D54A295994018F1289 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E55422EA0C83A9D0F853110B819D6B0 /* Utilities.swift */; };
+		DF6C6E623A28EE8566D21C520934CC6A /* GLTFCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75526A573FCECA0C9B8956A9F742B115 /* GLTFCamera.swift */; };
+		DFE6251BDA0413A785E30C0491A5C9DE /* GLTFNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E85DADC23BBA0667744F5FA3CF646C /* GLTFNode.swift */; };
+		E421A3D12CEA2A0EA68C5C7B8A52265C /* GLTFShaderModifierSurface_pbrSpecularGlossiness.shader in Resources */ = {isa = PBXBuildFile; fileRef = 8936C4A2F2D1B3FD76044307CEA87338 /* GLTFShaderModifierSurface_pbrSpecularGlossiness.shader */; };
+		E4AB42F345504B461A2F70395EA5B0F0 /* GLTFGlTFid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39697D80BEB54A2EDDE9CDF42BC7FB14 /* GLTFGlTFid.swift */; };
+		E67ADF8302908DE744F78F80FED6966E /* GLTFShaderModifierSurface_alphaModeBlend.shader in Resources */ = {isa = PBXBuildFile; fileRef = 1AFC2647E29CE31F0B738A7B60124153 /* GLTFShaderModifierSurface_alphaModeBlend.shader */; };
+		F2D5905A1F0399BA8F2F84F4FF23E354 /* GLTFBufferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11EE402119DF72818919C33B8AF8B52 /* GLTFBufferView.swift */; };
+		F46F23E431E72F3298A3AF2A40B61A35 /* GLTFShaderModifierSurface.shader in Resources */ = {isa = PBXBuildFile; fileRef = 39B6E5F1787D2DFC44C4508BB1822CDB /* GLTFShaderModifierSurface.shader */; };
+		F76C3B02795FB783223F16E06CABB69F /* GLTFAnimationChannelTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C5F9EE5C74B475BC70DA6D92FC11D4 /* GLTFAnimationChannelTarget.swift */; };
+		F931E38F676AED0D83F3099FAAE42BBB /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F222C25645EEE9009C8C252F8629BDE0 /* ARKit.framework */; };
+		FAC3495EC8B8FCEEE083A7309129053F /* GLTFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFD600A7D617D03AA34636FD040ADBD /* GLTFImage.swift */; };
+		FE454FC523970E1FD075BD059DF491F9 /* GLTFShaderModifierSurface_doubleSidedWorkaround.shader in Resources */ = {isa = PBXBuildFile; fileRef = BCAAD84BAE6A2D51A55052BDEF6320AB /* GLTFShaderModifierSurface_doubleSidedWorkaround.shader */; };
+		FFF0DBDD274D800817D7C3ACCE0BD933 /* FocusSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B78DA03E71CDA4C8191904BF912FE1 /* FocusSquare.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		72F695A9640BBDBD35E39D17E52C394B /* PBXContainerItemProxy */ = {
+		3696B35F044338C574236DEE369AC5F9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -130,126 +130,114 @@
 		075AD0F1435AA367257D752CE00F4860 /* GLTFAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFAnimation.swift; path = Source/Common/schema/GLTFAnimation.swift; sourceTree = "<group>"; };
 		079C77D2C78204A3FAB6BBDC06136C08 /* GLTFCameraOrthographic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFCameraOrthographic.swift; path = Source/Common/schema/GLTFCameraOrthographic.swift; sourceTree = "<group>"; };
 		082F2F12E3154FFA970951FB4DD5D5F8 /* Pods-ARQuickLook_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ARQuickLook_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		08AD5DD39CFF3E0FD3C5A02166469CBA /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		09FD3B748512626B6B0881541FCC2320 /* GLTFSceneKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GLTFSceneKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BA0C491C708466B692F9BC5CF3E2813 /* GLTFAccessorSparse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFAccessorSparse.swift; path = Source/Common/schema/GLTFAccessorSparse.swift; sourceTree = "<group>"; };
-		0C7FF5593C2E42F811ABBBE06526A1D3 /* GLTFShaderModifierSurface_pbrSpecularGlossiness_texture_doubleSidedWorkaround.shader */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GLTFShaderModifierSurface_pbrSpecularGlossiness_texture_doubleSidedWorkaround.shader; path = Source/Common/schema/extensions/KHR_materials_pbrSpecularGlossiness/GLTFShaderModifierSurface_pbrSpecularGlossiness_texture_doubleSidedWorkaround.shader; sourceTree = "<group>"; };
-		0E98F961079A17F3C5F6FE3700F7E59E /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0C7FF5593C2E42F811ABBBE06526A1D3 /* GLTFShaderModifierSurface_pbrSpecularGlossiness_texture_doubleSidedWorkaround.shader */ = {isa = PBXFileReference; includeInIndex = 1; name = GLTFShaderModifierSurface_pbrSpecularGlossiness_texture_doubleSidedWorkaround.shader; path = Source/Common/schema/extensions/KHR_materials_pbrSpecularGlossiness/GLTFShaderModifierSurface_pbrSpecularGlossiness_texture_doubleSidedWorkaround.shader; sourceTree = "<group>"; };
+		1323C976CFCC4D1F046460D31F13C1E9 /* ARQuickLook-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ARQuickLook-Info.plist"; sourceTree = "<group>"; };
 		1343C4EA90E8FE991C287D31108A83DE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		15BC3582844D0D3B68C5053B6BD1D615 /* ViewController+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ViewController+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
-		1AFC2647E29CE31F0B738A7B60124153 /* GLTFShaderModifierSurface_alphaModeBlend.shader */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GLTFShaderModifierSurface_alphaModeBlend.shader; path = Source/Common/GLTFShaderModifierSurface_alphaModeBlend.shader; sourceTree = "<group>"; };
+		195264CD5B905E8471B8E52EDAD71FFA /* ARQuickLook-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ARQuickLook-dummy.m"; sourceTree = "<group>"; };
+		1AFC2647E29CE31F0B738A7B60124153 /* GLTFShaderModifierSurface_alphaModeBlend.shader */ = {isa = PBXFileReference; includeInIndex = 1; name = GLTFShaderModifierSurface_alphaModeBlend.shader; path = Source/Common/GLTFShaderModifierSurface_alphaModeBlend.shader; sourceTree = "<group>"; };
 		1E082DC631B7387C38BBB5AE1A6C105C /* Pods-ARQuickLook_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARQuickLook_Example-frameworks.sh"; sourceTree = "<group>"; };
 		1EB7F90913EB3E0C5E7F05BB489F14B9 /* GLTFAsset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFAsset.swift; path = Source/Common/schema/GLTFAsset.swift; sourceTree = "<group>"; };
 		20FA8A91EBC98AF22D875C2DD32D7F72 /* GLTFSceneKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GLTFSceneKit-prefix.pch"; sourceTree = "<group>"; };
+		23C347F6EA1A0EDCDB49148F85029AF8 /* ARQuickLook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARQuickLook.release.xcconfig; sourceTree = "<group>"; };
+		2540F717BA878FDCBE2A08CB809296E2 /* AsyncVirtualObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AsyncVirtualObject.swift; sourceTree = "<group>"; };
 		2556C7D90FB71BA5A937B6FAD45A6102 /* Pods-ARQuickLook_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ARQuickLook_Tests-dummy.m"; sourceTree = "<group>"; };
 		26736E93FBDFAD893863E92188E44F9C /* GLTFAccessorSparseValues.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFAccessorSparseValues.swift; path = Source/Common/schema/GLTFAccessorSparseValues.swift; sourceTree = "<group>"; };
+		26AF963B27ACFBA5498DB9C60846FB8A /* VirtualObjectInteractionScalable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VirtualObjectInteractionScalable.swift; sourceTree = "<group>"; };
+		29C71A62A3473249E58F3EC8BB2572A8 /* ViewController+CoachingOverlay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ViewController+CoachingOverlay.swift"; sourceTree = "<group>"; };
 		2D33EADBC91FCB9607A872351D83D172 /* GLTFTexture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFTexture.swift; path = Source/Common/schema/GLTFTexture.swift; sourceTree = "<group>"; };
 		313446182F17162BE5CBEDF053A4EF36 /* Pods-ARQuickLook_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ARQuickLook_Example-umbrella.h"; sourceTree = "<group>"; };
 		3187AA43EE185D4D08AA0B61A1D68C18 /* Pods-ARQuickLook_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARQuickLook_Example.release.xcconfig"; sourceTree = "<group>"; };
 		32E85DADC23BBA0667744F5FA3CF646C /* GLTFNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFNode.swift; path = Source/Common/schema/GLTFNode.swift; sourceTree = "<group>"; };
 		35C5F9EE5C74B475BC70DA6D92FC11D4 /* GLTFAnimationChannelTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFAnimationChannelTarget.swift; path = Source/Common/schema/GLTFAnimationChannelTarget.swift; sourceTree = "<group>"; };
 		39697D80BEB54A2EDDE9CDF42BC7FB14 /* GLTFGlTFid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFGlTFid.swift; path = Source/Common/schema/GLTFGlTFid.swift; sourceTree = "<group>"; };
-		39B6E5F1787D2DFC44C4508BB1822CDB /* GLTFShaderModifierSurface.shader */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GLTFShaderModifierSurface.shader; path = Source/Common/GLTFShaderModifierSurface.shader; sourceTree = "<group>"; };
+		39B6E5F1787D2DFC44C4508BB1822CDB /* GLTFShaderModifierSurface.shader */ = {isa = PBXFileReference; includeInIndex = 1; name = GLTFShaderModifierSurface.shader; path = Source/Common/GLTFShaderModifierSurface.shader; sourceTree = "<group>"; };
 		3AD300FA38901C0C1DEEFEC3F7ED7305 /* GLTFBuffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFBuffer.swift; path = Source/Common/schema/GLTFBuffer.swift; sourceTree = "<group>"; };
 		3C24664E797B76C256ABD5293073B115 /* ExtensionList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionList.swift; path = Source/Common/schema/extensions/ExtensionList.swift; sourceTree = "<group>"; };
-		3F15D7682FE36E8924094AEAF4B2C574 /* VirtualObjectLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VirtualObjectLoader.swift; sourceTree = "<group>"; };
 		3F2872D1BDCD42CB28FCC9391AB3200A /* Pods-ARQuickLook_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ARQuickLook_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3FEB2D37B7F7F384787B522A40DF53FF /* GLTFTextureInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFTextureInfo.swift; path = Source/Common/schema/GLTFTextureInfo.swift; sourceTree = "<group>"; };
-		4107D01ED27C3BEAF313DDD7501A0560 /* AsyncVirtualObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AsyncVirtualObject.swift; sourceTree = "<group>"; };
+		4A57FEDC8E13CE9A2EBB50F4D8F7FB8D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		4AB80883EC546A4B5E69E4084BA9DB3A /* Pods-ARQuickLook_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ARQuickLook_Example-dummy.m"; sourceTree = "<group>"; };
 		4D26571DA90B4B5BC431DA23EBFD49FE /* Pods-ARQuickLook_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ARQuickLook_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4DACFBD8255F926D8FA631A5CE380129 /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4E12506A62C09BA1A1453BA6FA209950 /* GLTFMeshPrimitive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFMeshPrimitive.swift; path = Source/Common/schema/GLTFMeshPrimitive.swift; sourceTree = "<group>"; };
-		510341D3AB6CC7CB245707A3BE2F4104 /* VirtualObjectSelection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VirtualObjectSelection.swift; sourceTree = "<group>"; };
-		551D45FFF993F00DBED3770E9BDDF83F /* FocusSquare.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FocusSquare.swift; sourceTree = "<group>"; };
+		56E7FFF16FE1BF1585A6B4F489DBC473 /* VirtualObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VirtualObject.swift; sourceTree = "<group>"; };
+		58FE3AB2C9A1E44FF94C1888CFDA7CBE /* ARQuickLook.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ARQuickLook.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5920BA589EF9B5D54AFD337BA6D47F4D /* Pods-ARQuickLook_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARQuickLook_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		59BB545ED8182D3601AC500317DB38AA /* GLTFSampler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFSampler.swift; path = Source/Common/schema/GLTFSampler.swift; sourceTree = "<group>"; };
-		5D2177AAC501F5E44BB0CE4D0A192F2B /* ThresholdPanGesture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ThresholdPanGesture.swift; sourceTree = "<group>"; };
+		5E55422EA0C83A9D0F853110B819D6B0 /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		60606803AB376A24C22E3EC0CD03FAE0 /* GLTFAnimationChannel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFAnimationChannel.swift; path = Source/Common/schema/GLTFAnimationChannel.swift; sourceTree = "<group>"; };
 		60DEAA832C2BE663D73A85B9792AD5D0 /* GLTFMesh.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFMesh.swift; path = Source/Common/schema/GLTFMesh.swift; sourceTree = "<group>"; };
 		634736E2631B89810D65BDAF8AEB6EB9 /* GLTFGlTFChildOfRootProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFGlTFChildOfRootProperty.swift; path = Source/Common/schema/GLTFGlTFChildOfRootProperty.swift; sourceTree = "<group>"; };
+		63C4A480FC96415A5BB1514C06760CB6 /* ARQuickLook-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARQuickLook-umbrella.h"; sourceTree = "<group>"; };
 		66482631EEB8C31DC5DD5B6DF86C3411 /* GLTFKHRMaterialsCommon_GLTFKHRMaterialsCommon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFKHRMaterialsCommon_GLTFKHRMaterialsCommon.swift; path = Source/Common/schema/extensions/KHR_materials_common/GLTFKHRMaterialsCommon_GLTFKHRMaterialsCommon.swift; sourceTree = "<group>"; };
 		68930F955EB1F61ED5E27170674BE2DA /* GLTFUnarchiver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFUnarchiver.swift; path = Source/Common/GLTFUnarchiver.swift; sourceTree = "<group>"; };
-		69825F5F092B3B8919A90A8AC1C531D1 /* ViewController+CoachingOverlay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ViewController+CoachingOverlay.swift"; sourceTree = "<group>"; };
-		6F4141E813033E72862C5BA108E9906D /* ARQuickLook-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARQuickLook-prefix.pch"; sourceTree = "<group>"; };
+		70A626D63B4B35CCFC4C5FEA97646421 /* StatusViewController+SetupUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "StatusViewController+SetupUI.swift"; sourceTree = "<group>"; };
 		72815A3BC6DD395776A1DB7FE10A7718 /* GLTFAnimationSampler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFAnimationSampler.swift; path = Source/Common/schema/GLTFAnimationSampler.swift; sourceTree = "<group>"; };
 		75526A573FCECA0C9B8956A9F742B115 /* GLTFCamera.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFCamera.swift; path = Source/Common/schema/GLTFCamera.swift; sourceTree = "<group>"; };
 		762FDFCC27EF1C1702D2B9A5024C4691 /* Pods-ARQuickLook_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ARQuickLook_Tests.modulemap"; sourceTree = "<group>"; };
 		76E3FE6388156356090B6FF36FE4E0EB /* GLTFMaterial.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFMaterial.swift; path = Source/Common/schema/GLTFMaterial.swift; sourceTree = "<group>"; };
 		7711A9A2775BC1D83421736D13A113EE /* GLTFSceneKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GLTFSceneKit.release.xcconfig; sourceTree = "<group>"; };
-		7E41380CDCAC476AB1BA612A74CB7C45 /* VirtualObjectARView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VirtualObjectARView.swift; sourceTree = "<group>"; };
+		7C7F68ABFB9D766AA07478E87B69DC8D /* ARQuickLook.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ARQuickLook.modulemap; sourceTree = "<group>"; };
+		7D2C8072206205E868DB8E181A85F6BA /* VirtualObjectLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VirtualObjectLoader.swift; sourceTree = "<group>"; };
+		7DF1E8C601FB49F6DA3DF0FBBF0E3620 /* ViewController+SetupUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ViewController+SetupUI.swift"; sourceTree = "<group>"; };
 		807FE42F7B0B47F7F3E07934CBDF34E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		88137DBA89824A9D79B6130DE0691FDD /* GLTFCameraPerspective.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFCameraPerspective.swift; path = Source/Common/schema/GLTFCameraPerspective.swift; sourceTree = "<group>"; };
-		8936C4A2F2D1B3FD76044307CEA87338 /* GLTFShaderModifierSurface_pbrSpecularGlossiness.shader */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GLTFShaderModifierSurface_pbrSpecularGlossiness.shader; path = Source/Common/schema/extensions/KHR_materials_pbrSpecularGlossiness/GLTFShaderModifierSurface_pbrSpecularGlossiness.shader; sourceTree = "<group>"; };
-		893C6F45D7C673CAE638F96587E7930D /* GLTFShaderModifierSurface_pbrSpecularGlossiness_doubleSidedWorkaround.shader */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GLTFShaderModifierSurface_pbrSpecularGlossiness_doubleSidedWorkaround.shader; path = Source/Common/schema/extensions/KHR_materials_pbrSpecularGlossiness/GLTFShaderModifierSurface_pbrSpecularGlossiness_doubleSidedWorkaround.shader; sourceTree = "<group>"; };
-		896A12B35CE6E5133FE11467DB5D885B /* ARQuickLook.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ARQuickLook.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		8B818E591E0AE6DB8D946FB212E90071 /* ViewController+ObjectSelection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ViewController+ObjectSelection.swift"; sourceTree = "<group>"; };
+		8936C4A2F2D1B3FD76044307CEA87338 /* GLTFShaderModifierSurface_pbrSpecularGlossiness.shader */ = {isa = PBXFileReference; includeInIndex = 1; name = GLTFShaderModifierSurface_pbrSpecularGlossiness.shader; path = Source/Common/schema/extensions/KHR_materials_pbrSpecularGlossiness/GLTFShaderModifierSurface_pbrSpecularGlossiness.shader; sourceTree = "<group>"; };
+		893C6F45D7C673CAE638F96587E7930D /* GLTFShaderModifierSurface_pbrSpecularGlossiness_doubleSidedWorkaround.shader */ = {isa = PBXFileReference; includeInIndex = 1; name = GLTFShaderModifierSurface_pbrSpecularGlossiness_doubleSidedWorkaround.shader; path = Source/Common/schema/extensions/KHR_materials_pbrSpecularGlossiness/GLTFShaderModifierSurface_pbrSpecularGlossiness_doubleSidedWorkaround.shader; sourceTree = "<group>"; };
+		8B7F2E3D4CA2F972804A1B58A65075D8 /* ARQuickLook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARQuickLook.debug.xcconfig; sourceTree = "<group>"; };
 		8C53A93554D30F3EE6FE51220826A5F2 /* Pods-ARQuickLook_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ARQuickLook_Tests-umbrella.h"; sourceTree = "<group>"; };
-		96F52AFC0A8CB53BB0006A0A16FBB7F1 /* ARQuickLook-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ARQuickLook-Info.plist"; sourceTree = "<group>"; };
-		97F17F58F8AB6C7BD99EDB2E0AC9401E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		9AB98D71A858677A9833514766C81497 /* VirtualObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VirtualObject.swift; sourceTree = "<group>"; };
+		8D593263DEC1B4CC443AEDEE5B51111C /* ViewController+ObjectSelection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ViewController+ObjectSelection.swift"; sourceTree = "<group>"; };
+		98555EC6A1C588A8C650EBDA5C890FFF /* VirtualObjectInteraction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VirtualObjectInteraction.swift; sourceTree = "<group>"; };
 		9BFEBD7FD7A2EB5F215D6C15E66648C5 /* GLTFSceneKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GLTFSceneKit-dummy.m"; sourceTree = "<group>"; };
 		9D926EC00AE2C9CAB146D95387EDF492 /* GLTFSceneKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GLTFSceneKit.debug.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A189FD88AF04E479D22D79960D2F9F96 /* GLTFScene.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFScene.swift; path = Source/Common/schema/GLTFScene.swift; sourceTree = "<group>"; };
+		A3807341A3DCF46D179E25657542C3D8 /* FocusSquareSegment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FocusSquareSegment.swift; sourceTree = "<group>"; };
 		A5FF53ACA25CA49DA719FAA76616062C /* GLTFTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFTypes.swift; path = Source/Common/GLTFTypes.swift; sourceTree = "<group>"; };
-		A6A1D7FFFA16F1D909C92BF152EEE939 /* ARQuickLook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARQuickLook.debug.xcconfig; sourceTree = "<group>"; };
+		A67CE88DF7E7DC34C7BDCF9A3EBF3B2A /* VirtualObjectSelection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VirtualObjectSelection.swift; sourceTree = "<group>"; };
 		A8A52C67A6AC2CFE69FAA793D948ACF9 /* GLTFExtras.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFExtras.swift; path = Source/Common/schema/GLTFExtras.swift; sourceTree = "<group>"; };
-		A8D8D97F2CFB918BD9448B19B53D9233 /* FocusSquareSegment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FocusSquareSegment.swift; sourceTree = "<group>"; };
-		AB414EFFA53CA7782C5074AB528C3AEF /* ARQuickLookController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ARQuickLookController.swift; sourceTree = "<group>"; };
+		ABD0D789C3C05E0BDE8E5450EA53D4BB /* ARQuickLookController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ARQuickLookController.swift; sourceTree = "<group>"; };
 		ABFD600A7D617D03AA34636FD040ADBD /* GLTFImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFImage.swift; path = Source/Common/schema/GLTFImage.swift; sourceTree = "<group>"; };
-		AC7ABE2694858106B023FC1EE989FA54 /* VirtualObjectSelection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VirtualObjectSelection.swift; sourceTree = "<group>"; };
-		AFB3897397D8FE210CA485B1A11D20E5 /* ARQuickLook-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARQuickLook-umbrella.h"; sourceTree = "<group>"; };
 		B0CCF291BFEA4ECBABAB2D915C9F4F60 /* GLTFMaterialNormalTextureInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFMaterialNormalTextureInfo.swift; path = Source/Common/schema/GLTFMaterialNormalTextureInfo.swift; sourceTree = "<group>"; };
 		B0F6163EC5815ADF0DC0CA24DA49F9BB /* GLTFGlTFProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFGlTFProperty.swift; path = Source/Common/schema/GLTFGlTFProperty.swift; sourceTree = "<group>"; };
-		B3FB232FD8084191DA1DA8316D642209 /* ARQuickLook-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ARQuickLook-dummy.m"; sourceTree = "<group>"; };
+		B1754916FBFF9D3777C9CD60B24AB5F8 /* ViewController+Actions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ViewController+Actions.swift"; sourceTree = "<group>"; };
+		B2B7BF18331F0B8E3BDA5975F94DBF74 /* VirtualObjectARView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VirtualObjectARView.swift; sourceTree = "<group>"; };
+		B2FA89FBF433333BCCB782642B2ABF10 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		B900D07B177DDD938B757A48E2372F90 /* GLTFAccessorSparseIndices.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFAccessorSparseIndices.swift; path = Source/Common/schema/GLTFAccessorSparseIndices.swift; sourceTree = "<group>"; };
-		BCAAD84BAE6A2D51A55052BDEF6320AB /* GLTFShaderModifierSurface_doubleSidedWorkaround.shader */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GLTFShaderModifierSurface_doubleSidedWorkaround.shader; path = Source/Common/GLTFShaderModifierSurface_doubleSidedWorkaround.shader; sourceTree = "<group>"; };
+		BCAAD84BAE6A2D51A55052BDEF6320AB /* GLTFShaderModifierSurface_doubleSidedWorkaround.shader */ = {isa = PBXFileReference; includeInIndex = 1; name = GLTFShaderModifierSurface_doubleSidedWorkaround.shader; path = Source/Common/GLTFShaderModifierSurface_doubleSidedWorkaround.shader; sourceTree = "<group>"; };
 		BE3AA12131389C02BEB6E794B65637A7 /* Pods-ARQuickLook_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ARQuickLook_Tests-Info.plist"; sourceTree = "<group>"; };
-		BEB296A77C566A36E5946F52F9E6B831 /* ViewController+Actions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ViewController+Actions.swift"; sourceTree = "<group>"; };
-		BF0212E8BBCCAFBB5307C13A1D627578 /* ARQuickLook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARQuickLook.release.xcconfig; sourceTree = "<group>"; };
 		BFA2A015B305F5ECEEF5D250B6CB477A /* GLTFGlTF.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFGlTF.swift; path = Source/Common/schema/GLTFGlTF.swift; sourceTree = "<group>"; };
 		C2137C1693AC732CBE68AF773BBFCFA1 /* GLTFSceneKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GLTFSceneKit-umbrella.h"; sourceTree = "<group>"; };
-		C5E35DE4235407F54F37C1E76CD49F17 /* GLTFShaderModifierFragment_alphaCutoff.shader */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GLTFShaderModifierFragment_alphaCutoff.shader; path = Source/Common/GLTFShaderModifierFragment_alphaCutoff.shader; sourceTree = "<group>"; };
+		C5E35DE4235407F54F37C1E76CD49F17 /* GLTFShaderModifierFragment_alphaCutoff.shader */ = {isa = PBXFileReference; includeInIndex = 1; name = GLTFShaderModifierFragment_alphaCutoff.shader; path = Source/Common/GLTFShaderModifierFragment_alphaCutoff.shader; sourceTree = "<group>"; };
 		CA1D22C5900FDC0631D25F2B838E33ED /* GLTFSceneSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFSceneSource.swift; path = Source/Common/GLTFSceneSource.swift; sourceTree = "<group>"; };
-		CAA27A6390E4369068CAF81B6301F8D9 /* VirtualObjectInteraction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VirtualObjectInteraction.swift; sourceTree = "<group>"; };
 		CAE004C8F7EB14EC29BEA7559781F4E0 /* GLTFSceneKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GLTFSceneKit-Info.plist"; sourceTree = "<group>"; };
-		CAF0695C24F16DCB5ADECA842270D7FD /* ARQuickLook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ARQuickLook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAF0695C24F16DCB5ADECA842270D7FD /* ARQuickLook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ARQuickLook.framework; path = ARQuickLook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D480769FED22A78CCCA86CFDC1C873E2 /* GLTFMaterialPbrMetallicRoughness.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFMaterialPbrMetallicRoughness.swift; path = Source/Common/schema/GLTFMaterialPbrMetallicRoughness.swift; sourceTree = "<group>"; };
-		D75A0B475DB30F8356AFDC79D3488DE9 /* Pods_ARQuickLook_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARQuickLook_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8670B1C03BAC2D09CF05EC76A69ACD5 /* VirtualObjectInteractionScalable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VirtualObjectInteractionScalable.swift; sourceTree = "<group>"; };
+		D75A0B475DB30F8356AFDC79D3488DE9 /* Pods_ARQuickLook_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ARQuickLook_Tests.framework; path = "Pods-ARQuickLook_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA9D8D69B528DD7A6C5065946DB0B22D /* ThresholdPanGesture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ThresholdPanGesture.swift; sourceTree = "<group>"; };
 		DAB5879DB9D618B31EA4CC2D8A6FAF40 /* Pods-ARQuickLook_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ARQuickLook_Example-Info.plist"; sourceTree = "<group>"; };
+		DB1697EC85F6398D1F85059F005197D2 /* ViewController+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ViewController+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
 		DC78B8E7313548F2166F25BA288EE4C2 /* GLTFSceneKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GLTFSceneKit.modulemap; sourceTree = "<group>"; };
 		DD1D65718442FB97B0A1E481950BEA56 /* GLTFSkin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFSkin.swift; path = Source/Common/schema/GLTFSkin.swift; sourceTree = "<group>"; };
 		DD41625ED32976E7C7784FFFE0D12575 /* Pods-ARQuickLook_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARQuickLook_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		DFC6A026DD0BDC6DAAE70F620256CB02 /* StatusViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		DEBEBE51491AEF19BBA40073ADF281BE /* StatusViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		E33CD61FA633C095572186F2E342AE12 /* Pods-ARQuickLook_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ARQuickLook_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E99ED4A24BCCD693C9ACF1B511473096 /* GLTFAccessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFAccessor.swift; path = Source/Common/schema/GLTFAccessor.swift; sourceTree = "<group>"; };
-		EADE1FA895869E911B1A9169BAB84403 /* StatusViewController+SetupUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "StatusViewController+SetupUI.swift"; sourceTree = "<group>"; };
 		EC9727CAA3DBB4EFFD8B63D5AC1DBF48 /* Pods-ARQuickLook_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ARQuickLook_Example.modulemap"; sourceTree = "<group>"; };
 		EE0203D09A91A1A523D8ED8571FE7927 /* GLTFExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFExtension.swift; path = Source/Common/schema/GLTFExtension.swift; sourceTree = "<group>"; };
-		F0D508B23BDB77D59B6A86E1A7600912 /* Pods_ARQuickLook_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARQuickLook_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0D508B23BDB77D59B6A86E1A7600912 /* Pods_ARQuickLook_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ARQuickLook_Example.framework; path = "Pods-ARQuickLook_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F11EE402119DF72818919C33B8AF8B52 /* GLTFBufferView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFBufferView.swift; path = Source/Common/schema/GLTFBufferView.swift; sourceTree = "<group>"; };
 		F222C25645EEE9009C8C252F8629BDE0 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/ARKit.framework; sourceTree = DEVELOPER_DIR; };
+		F3B78DA03E71CDA4C8191904BF912FE1 /* FocusSquare.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FocusSquare.swift; sourceTree = "<group>"; };
 		F7EDECF901462DE37EDE36326ABFF1A7 /* GLTFErrors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFErrors.swift; path = Source/Common/GLTFErrors.swift; sourceTree = "<group>"; };
-		F85EA2C89E78C9264D51E679ADB34032 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		F8E7106D69E2E66C4CCEAEFF10F5E232 /* GLTFSceneKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GLTFSceneKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA4CFE1C724E1C1BE4CDF946ABB7C7D6 /* ARQuickLook.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ARQuickLook.modulemap; sourceTree = "<group>"; };
-		FC1EF7ECC63B37F80A7FB11990B935DE /* ViewController+SetupUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ViewController+SetupUI.swift"; sourceTree = "<group>"; };
+		F8E7106D69E2E66C4CCEAEFF10F5E232 /* GLTFSceneKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GLTFSceneKit.framework; path = GLTFSceneKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADF58BFC99E8EDAD00C49D534328545 /* ARQuickLook-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARQuickLook-prefix.pch"; sourceTree = "<group>"; };
 		FD35937412DB6F35E659D21D0602EA3A /* Pods-ARQuickLook_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARQuickLook_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		143361E5DB9F3E6AF96FDC30686B9B68 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1B900F4FEAC77D7CDD9D68B690B20B05 /* ARKit.framework in Frameworks */,
-				6283C0EFB4CFAFFB95209ABCE03016BA /* Foundation.framework in Frameworks */,
-				36C45F87015729DADFB51DBA795DEC6E /* GLTFSceneKit.framework in Frameworks */,
-				24C71C0B35C7A759A1A06585E183B6DD /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		347140BEB576D8E135FE74B2DC7519E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,11 +246,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C973C3DD3C03E465ACED1DD949DE6EFD /* Frameworks */ = {
+		93EB3C43B13A0709963ADE547FC512F5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				981A2AEAE5404C97D6DEB12D5152B6AE /* Foundation.framework in Frameworks */,
+				F931E38F676AED0D83F3099FAAE42BBB /* ARKit.framework in Frameworks */,
+				68526BB090F93679F3E0788AB220DD24 /* Foundation.framework in Frameworks */,
+				60741F09FDDC83F3EB4B6359A9B6DB01 /* GLTFSceneKit.framework in Frameworks */,
+				65E15CF3BBA5A8878BE52D6383C4439A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE89435650329E0E759B11C74C7D95D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E642D4992A68AAF36AE93F918CD04C9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,16 +276,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0249591A9A11BCF72D068EBCE262A40B /* ARQuickLook */ = {
+		021A9B055830E98CD0169FB569F246F2 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				871A3AD5FA55957D53B9C51B81B8FAA0 /* ARKitInteraction */,
-				4CA464B8F4D868B62D2B81E80B5BA8CD /* ARQuickLook */,
-				F55BA29FEE4A9AD34EF62B3247977003 /* Pod */,
-				2E8ACC78442A1CF96FE4DD3B50133D33 /* Support Files */,
+				5E55422EA0C83A9D0F853110B819D6B0 /* Utilities.swift */,
+			);
+			name = Utilities;
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		02F054CE6AF018E2AEAC65C31ED196B4 /* Additional View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DEBEBE51491AEF19BBA40073ADF281BE /* StatusViewController.swift */,
+				A67CE88DF7E7DC34C7BDCF9A3EBF3B2A /* VirtualObjectSelection.swift */,
+			);
+			name = "Additional View Controllers";
+			path = "Additional View Controllers";
+			sourceTree = "<group>";
+		};
+		0D9A30479CF4BBCEEA2A35E1BDDCDFAC /* ARQuickLook */ = {
+			isa = PBXGroup;
+			children = (
+				ABD0D789C3C05E0BDE8E5450EA53D4BB /* ARQuickLookController.swift */,
+				2540F717BA878FDCBE2A08CB809296E2 /* AsyncVirtualObject.swift */,
+				70A626D63B4B35CCFC4C5FEA97646421 /* StatusViewController+SetupUI.swift */,
+				7DF1E8C601FB49F6DA3DF0FBBF0E3620 /* ViewController+SetupUI.swift */,
+				26AF963B27ACFBA5498DB9C60846FB8A /* VirtualObjectInteractionScalable.swift */,
 			);
 			name = ARQuickLook;
-			path = ../..;
+			path = ARQuickLook/Classes/ARQuickLook;
 			sourceTree = "<group>";
 		};
 		1CCD9C94FB8168E130A30D4086CDE5E0 /* Pods-ARQuickLook_Example */ = {
@@ -306,30 +325,6 @@
 			path = "Target Support Files/Pods-ARQuickLook_Example";
 			sourceTree = "<group>";
 		};
-		20ECCD820B9530946FD46F798CDAA1DD /* Virtual Objects */ = {
-			isa = PBXGroup;
-			children = (
-				9AB98D71A858677A9833514766C81497 /* VirtualObject.swift */,
-				3F15D7682FE36E8924094AEAF4B2C574 /* VirtualObjectLoader.swift */,
-			);
-			path = "Virtual Objects";
-			sourceTree = "<group>";
-		};
-		2E8ACC78442A1CF96FE4DD3B50133D33 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FA4CFE1C724E1C1BE4CDF946ABB7C7D6 /* ARQuickLook.modulemap */,
-				B3FB232FD8084191DA1DA8316D642209 /* ARQuickLook-dummy.m */,
-				96F52AFC0A8CB53BB0006A0A16FBB7F1 /* ARQuickLook-Info.plist */,
-				6F4141E813033E72862C5BA108E9906D /* ARQuickLook-prefix.pch */,
-				AFB3897397D8FE210CA485B1A11D20E5 /* ARQuickLook-umbrella.h */,
-				A6A1D7FFFA16F1D909C92BF152EEE939 /* ARQuickLook.debug.xcconfig */,
-				BF0212E8BBCCAFBB5307C13A1D627578 /* ARQuickLook.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ARQuickLook";
-			sourceTree = "<group>";
-		};
 		30B4D3EA85C8756675FA1910AF67D9A5 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,23 +333,6 @@
 				1343C4EA90E8FE991C287D31108A83DE /* UIKit.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		3176F5AFA9FA6F9AD8796D65A5FADECE /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				08AD5DD39CFF3E0FD3C5A02166469CBA /* Utilities.swift */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
-		36172C224512A6823F98FD8F133BCA70 /* Additional View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				DFC6A026DD0BDC6DAAE70F620256CB02 /* StatusViewController.swift */,
-				510341D3AB6CC7CB245707A3BE2F4104 /* VirtualObjectSelection.swift */,
-			);
-			path = "Additional View Controllers";
 			sourceTree = "<group>";
 		};
 		43CBD128E79EFFDDC67F8D243561C596 /* Frameworks */ = {
@@ -366,18 +344,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4CA464B8F4D868B62D2B81E80B5BA8CD /* ARQuickLook */ = {
+		51A7F39412F4D39AE2041ECACAB4ABED /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				AB414EFFA53CA7782C5074AB528C3AEF /* ARQuickLookController.swift */,
-				4107D01ED27C3BEAF313DDD7501A0560 /* AsyncVirtualObject.swift */,
-				EADE1FA895869E911B1A9169BAB84403 /* StatusViewController+SetupUI.swift */,
-				FC1EF7ECC63B37F80A7FB11990B935DE /* ViewController+SetupUI.swift */,
-				D8670B1C03BAC2D09CF05EC76A69ACD5 /* VirtualObjectInteractionScalable.swift */,
-				AC7ABE2694858106B023FC1EE989FA54 /* VirtualObjectSelection.swift */,
+				58FE3AB2C9A1E44FF94C1888CFDA7CBE /* ARQuickLook.podspec */,
+				B2FA89FBF433333BCCB782642B2ABF10 /* LICENSE */,
+				4A57FEDC8E13CE9A2EBB50F4D8F7FB8D /* README.md */,
 			);
-			name = ARQuickLook;
-			path = ARQuickLook/Classes/ARQuickLook;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		539A74DF8FDF9551E1788A2761B5B731 /* Products */ = {
@@ -405,6 +379,26 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		5B9BB7862DD23387543D01BC488373BB /* ARKitInteraction */ = {
+			isa = PBXGroup;
+			children = (
+				DA9D8D69B528DD7A6C5065946DB0B22D /* ThresholdPanGesture.swift */,
+				4DACFBD8255F926D8FA631A5CE380129 /* ViewController.swift */,
+				B1754916FBFF9D3777C9CD60B24AB5F8 /* ViewController+Actions.swift */,
+				DB1697EC85F6398D1F85059F005197D2 /* ViewController+ARSCNViewDelegate.swift */,
+				29C71A62A3473249E58F3EC8BB2572A8 /* ViewController+CoachingOverlay.swift */,
+				8D593263DEC1B4CC443AEDEE5B51111C /* ViewController+ObjectSelection.swift */,
+				B2B7BF18331F0B8E3BDA5975F94DBF74 /* VirtualObjectARView.swift */,
+				98555EC6A1C588A8C650EBDA5C890FFF /* VirtualObjectInteraction.swift */,
+				02F054CE6AF018E2AEAC65C31ED196B4 /* Additional View Controllers */,
+				CAAC481849E7A4DD37B20F3A48A18D24 /* Focus Square */,
+				021A9B055830E98CD0169FB569F246F2 /* Utilities */,
+				FE10A558CC196DF44DB43788F8BA4AA0 /* Virtual Objects */,
+			);
+			name = ARKitInteraction;
+			path = ARQuickLook/Classes/ARKitInteraction;
+			sourceTree = "<group>";
+		};
 		735358B8CEB315A98AAF23A48D11B0BF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -420,24 +414,19 @@
 			path = "../Target Support Files/GLTFSceneKit";
 			sourceTree = "<group>";
 		};
-		871A3AD5FA55957D53B9C51B81B8FAA0 /* ARKitInteraction */ = {
+		949968476445AB6ED7B4E2AF291251D5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5D2177AAC501F5E44BB0CE4D0A192F2B /* ThresholdPanGesture.swift */,
-				0E98F961079A17F3C5F6FE3700F7E59E /* ViewController.swift */,
-				BEB296A77C566A36E5946F52F9E6B831 /* ViewController+Actions.swift */,
-				15BC3582844D0D3B68C5053B6BD1D615 /* ViewController+ARSCNViewDelegate.swift */,
-				69825F5F092B3B8919A90A8AC1C531D1 /* ViewController+CoachingOverlay.swift */,
-				8B818E591E0AE6DB8D946FB212E90071 /* ViewController+ObjectSelection.swift */,
-				7E41380CDCAC476AB1BA612A74CB7C45 /* VirtualObjectARView.swift */,
-				CAA27A6390E4369068CAF81B6301F8D9 /* VirtualObjectInteraction.swift */,
-				36172C224512A6823F98FD8F133BCA70 /* Additional View Controllers */,
-				D6E1172B024F1C56C7EBAE59E018F570 /* Focus Square */,
-				3176F5AFA9FA6F9AD8796D65A5FADECE /* Utilities */,
-				20ECCD820B9530946FD46F798CDAA1DD /* Virtual Objects */,
+				7C7F68ABFB9D766AA07478E87B69DC8D /* ARQuickLook.modulemap */,
+				195264CD5B905E8471B8E52EDAD71FFA /* ARQuickLook-dummy.m */,
+				1323C976CFCC4D1F046460D31F13C1E9 /* ARQuickLook-Info.plist */,
+				FADF58BFC99E8EDAD00C49D534328545 /* ARQuickLook-prefix.pch */,
+				63C4A480FC96415A5BB1514C06760CB6 /* ARQuickLook-umbrella.h */,
+				8B7F2E3D4CA2F972804A1B58A65075D8 /* ARQuickLook.debug.xcconfig */,
+				23C347F6EA1A0EDCDB49148F85029AF8 /* ARQuickLook.release.xcconfig */,
 			);
-			name = ARKitInteraction;
-			path = ARQuickLook/Classes/ARKitInteraction;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ARQuickLook";
 			sourceTree = "<group>";
 		};
 		AE91D0E63FDF9C6F4E9896971A4326F0 /* Targets Support Files */ = {
@@ -447,6 +436,18 @@
 				C48AE557A484E99707F1750E8B27F176 /* Pods-ARQuickLook_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BDC00C4419793DE417E1835CBF570C51 /* ARQuickLook */ = {
+			isa = PBXGroup;
+			children = (
+				5B9BB7862DD23387543D01BC488373BB /* ARKitInteraction */,
+				0D9A30479CF4BBCEEA2A35E1BDDCDFAC /* ARQuickLook */,
+				51A7F39412F4D39AE2041ECACAB4ABED /* Pod */,
+				949968476445AB6ED7B4E2AF291251D5 /* Support Files */,
+			);
+			name = ARQuickLook;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		C48AE557A484E99707F1750E8B27F176 /* Pods-ARQuickLook_Tests */ = {
@@ -465,6 +466,16 @@
 			path = "Target Support Files/Pods-ARQuickLook_Tests";
 			sourceTree = "<group>";
 		};
+		CAAC481849E7A4DD37B20F3A48A18D24 /* Focus Square */ = {
+			isa = PBXGroup;
+			children = (
+				F3B78DA03E71CDA4C8191904BF912FE1 /* FocusSquare.swift */,
+				A3807341A3DCF46D179E25657542C3D8 /* FocusSquareSegment.swift */,
+			);
+			name = "Focus Square";
+			path = "Focus Square";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
@@ -477,19 +488,10 @@
 			);
 			sourceTree = "<group>";
 		};
-		D6E1172B024F1C56C7EBAE59E018F570 /* Focus Square */ = {
-			isa = PBXGroup;
-			children = (
-				551D45FFF993F00DBED3770E9BDDF83F /* FocusSquare.swift */,
-				A8D8D97F2CFB918BD9448B19B53D9233 /* FocusSquareSegment.swift */,
-			);
-			path = "Focus Square";
-			sourceTree = "<group>";
-		};
 		DA1324E41BB16BCF6A682DFE593141B2 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0249591A9A11BCF72D068EBCE262A40B /* ARQuickLook */,
+				BDC00C4419793DE417E1835CBF570C51 /* ARQuickLook */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -541,6 +543,7 @@
 				5B34E398C6EE8C544109B8ED5348ACC4 /* Resources */,
 				735358B8CEB315A98AAF23A48D11B0BF /* Support Files */,
 			);
+			name = GLTFSceneKit;
 			path = GLTFSceneKit;
 			sourceTree = "<group>";
 		};
@@ -552,32 +555,32 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		F55BA29FEE4A9AD34EF62B3247977003 /* Pod */ = {
+		FE10A558CC196DF44DB43788F8BA4AA0 /* Virtual Objects */ = {
 			isa = PBXGroup;
 			children = (
-				896A12B35CE6E5133FE11467DB5D885B /* ARQuickLook.podspec */,
-				F85EA2C89E78C9264D51E679ADB34032 /* LICENSE */,
-				97F17F58F8AB6C7BD99EDB2E0AC9401E /* README.md */,
+				56E7FFF16FE1BF1585A6B4F489DBC473 /* VirtualObject.swift */,
+				7D2C8072206205E868DB8E181A85F6BA /* VirtualObjectLoader.swift */,
 			);
-			name = Pod;
+			name = "Virtual Objects";
+			path = "Virtual Objects";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		23850D203D79047A57181EBB13C7B60A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				73D806EBB70A79B8E2198AC2ABBA703C /* ARQuickLook-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2E04DB3EEFB4D28541350D3A36103C5A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A11B9E36714021EADFDA390EA37960B3 /* Pods-ARQuickLook_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54A15D943FCC68767F6A233479AD2BE9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20F8936F76B03CE49920789EAF5B5FA /* ARQuickLook-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,11 +592,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6CE23E4F9635BB93C5C279F50CEC05EB /* Headers */ = {
+		CD5C66B39181560C99CE0D4450EE35EC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA3676A966FF870C94CCCAD4FD8F389F /* GLTFSceneKit-umbrella.h in Headers */,
+				92B511722A51B0349E3B7096805807C6 /* GLTFSceneKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,12 +605,12 @@
 /* Begin PBXNativeTarget section */
 		2665B1779B880B2D882474D5E6EA6B13 /* GLTFSceneKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA35723EFE6E484472267C21846FDE25 /* Build configuration list for PBXNativeTarget "GLTFSceneKit" */;
+			buildConfigurationList = 558F6E7CFF32D8F301DEEDFF8763072D /* Build configuration list for PBXNativeTarget "GLTFSceneKit" */;
 			buildPhases = (
-				6CE23E4F9635BB93C5C279F50CEC05EB /* Headers */,
-				2720B41AED2F46AD4C6170DBD8C5B3FD /* Sources */,
-				C973C3DD3C03E465ACED1DD949DE6EFD /* Frameworks */,
-				809D4E10B1E4AE683099E066FCA25972 /* Resources */,
+				CD5C66B39181560C99CE0D4450EE35EC /* Headers */,
+				6A591D20953141B9EBC0A43B5A3FA23C /* Sources */,
+				AE89435650329E0E759B11C74C7D95D7 /* Frameworks */,
+				B67066A0024334D46BF03CD6836AE978 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -640,17 +643,17 @@
 		};
 		9FF8B5D3244D8B8A50FE0CAB50DA2710 /* ARQuickLook */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F2D9A9711AC19D4354C32C0F94091A30 /* Build configuration list for PBXNativeTarget "ARQuickLook" */;
+			buildConfigurationList = FB5362E125AA294EA2F58F25A1B3E62D /* Build configuration list for PBXNativeTarget "ARQuickLook" */;
 			buildPhases = (
-				23850D203D79047A57181EBB13C7B60A /* Headers */,
-				8BA0F11BE71DBED057476FA77720126B /* Sources */,
-				143361E5DB9F3E6AF96FDC30686B9B68 /* Frameworks */,
-				6B4ECF49A5D45934AACC5EF2C640E787 /* Resources */,
+				54A15D943FCC68767F6A233479AD2BE9 /* Headers */,
+				BCB5A10A0603B49017A51796FEAE1D37 /* Sources */,
+				93EB3C43B13A0709963ADE547FC512F5 /* Frameworks */,
+				2A66EDA3E0B5CA4993A4111F143AFF39 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				57BBA9FDD7D70DEDD825E09461D0E2F7 /* PBXTargetDependency */,
+				A0C67F6E0490A89F4EE9189FBA700282 /* PBXTargetDependency */,
 			);
 			name = ARQuickLook;
 			productName = ARQuickLook;
@@ -714,24 +717,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6B4ECF49A5D45934AACC5EF2C640E787 /* Resources */ = {
+		2A66EDA3E0B5CA4993A4111F143AFF39 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		809D4E10B1E4AE683099E066FCA25972 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F4555071BC60ECBE17BB4BB6902C3A6D /* GLTFShaderModifierFragment_alphaCutoff.shader in Resources */,
-				D0FFCA109586DB05E6AF2355D5E8BEA4 /* GLTFShaderModifierSurface.shader in Resources */,
-				0F897349961016324FF3B9DBB1411494 /* GLTFShaderModifierSurface_alphaModeBlend.shader in Resources */,
-				D8B4F9B908FA7FF6DD61A4E01223DFC1 /* GLTFShaderModifierSurface_doubleSidedWorkaround.shader in Resources */,
-				CF0C6B9A64018CDBD956D8E8E422563E /* GLTFShaderModifierSurface_pbrSpecularGlossiness.shader in Resources */,
-				CEB34E0282409EC338DD75CB12680F79 /* GLTFShaderModifierSurface_pbrSpecularGlossiness_doubleSidedWorkaround.shader in Resources */,
-				0AA96E45F27C5E355A3D4855D2603445 /* GLTFShaderModifierSurface_pbrSpecularGlossiness_texture_doubleSidedWorkaround.shader in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -742,84 +731,69 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		2720B41AED2F46AD4C6170DBD8C5B3FD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+		B67066A0024334D46BF03CD6836AE978 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55DECD83B97D37D2933D93366E3CF924 /* ExtensionList.swift in Sources */,
-				40F5EE4345334AD187F3E39EB443F98D /* GLTFAccessor.swift in Sources */,
-				5387993331C6A3B2432A801E67F8B89B /* GLTFAccessorSparse.swift in Sources */,
-				8438CDFCE3FAB25E72F346B573B9BEB5 /* GLTFAccessorSparseIndices.swift in Sources */,
-				ED585D36DCD671B00A6BF22D3335AC94 /* GLTFAccessorSparseValues.swift in Sources */,
-				7B182B72E801FF373D0791A148712BAA /* GLTFAnimation.swift in Sources */,
-				25D7100E02602343D7CF447407CA4CD9 /* GLTFAnimationChannel.swift in Sources */,
-				757169D4DCA2BD6FC9B5106F75131D6D /* GLTFAnimationChannelTarget.swift in Sources */,
-				272E48FDC7AFBD43711AB096A6B6CC6D /* GLTFAnimationSampler.swift in Sources */,
-				1F72E3F765BD3EF8F41CD2797D77704F /* GLTFAsset.swift in Sources */,
-				40EB0DD56DB30B90210D1C4AB820A5EF /* GLTFBuffer.swift in Sources */,
-				EE48472BED6B699A1B569EF1593F2505 /* GLTFBufferView.swift in Sources */,
-				AC49B9295A174AA9F28669CA844A7FAC /* GLTFCamera.swift in Sources */,
-				8B5E5F9D4ED276E4361521C59ACBB0CD /* GLTFCameraOrthographic.swift in Sources */,
-				6DF3462136E5D07CB7678470B3C177D3 /* GLTFCameraPerspective.swift in Sources */,
-				EF09F91AA982143E556B9BA4A9B048F2 /* GLTFErrors.swift in Sources */,
-				276A25F84A011693382FA314155AA2A0 /* GLTFExtension.swift in Sources */,
-				449BA15E16ED8FE248A132F943C31428 /* GLTFExtras.swift in Sources */,
-				247ECEED977049896AFD8D3054029C40 /* GLTFFunctions.swift in Sources */,
-				069AB2B27AAA2031F819BAAF545D0460 /* GLTFGlTF.swift in Sources */,
-				D672117BFC88F06B070CD4AA35EF0974 /* GLTFGlTFChildOfRootProperty.swift in Sources */,
-				13FD2E534CB5239D6D61BAF48FD149D6 /* GLTFGlTFid.swift in Sources */,
-				297F2C3B11282BD05C6D7FD78859D79D /* GLTFGlTFProperty.swift in Sources */,
-				E5C03CCD3032CD195BABAD95AA9FBCD6 /* GLTFImage.swift in Sources */,
-				4177276E9EF8D6D75CB67F65B239AC8C /* GLTFKHRMaterialsCommon_GLTFKHRMaterialsCommon.swift in Sources */,
-				F96D592C1CB355D65C7E12C5839DAA92 /* GLTFKHRMaterialsPbrSpecularGlossiness_GLTFKHRMaterialsPbrSpecularGlossiness.swift in Sources */,
-				336815644AC59537F5358B1E8256A0A8 /* GLTFMaterial.swift in Sources */,
-				1DCDE81CD588BDC779D542741FAFA865 /* GLTFMaterialNormalTextureInfo.swift in Sources */,
-				3AEC6E769D63602AAB1A6740CA1238A0 /* GLTFMaterialOcclusionTextureInfo.swift in Sources */,
-				C5BBD64BB79A78EA0AB99DE847904FAB /* GLTFMaterialPbrMetallicRoughness.swift in Sources */,
-				553538D4960653D93214703506217025 /* GLTFMesh.swift in Sources */,
-				C7975AFF2147559794495995C7BA1103 /* GLTFMeshPrimitive.swift in Sources */,
-				56577AD5868CA5E0C833D722814A919B /* GLTFNode.swift in Sources */,
-				1C057B65EBCF7BD41B7FF77CE655F437 /* GLTFSampler.swift in Sources */,
-				6096287B523165A87686CE83BD9DE54A /* GLTFScene.swift in Sources */,
-				3CEAF0A86F29B0C1BF4F4951E2783D9E /* GLTFSceneKit-dummy.m in Sources */,
-				4BC0CD09D7CB12FF908AB27A1C9D72F3 /* GLTFSceneSource.swift in Sources */,
-				BE1C1C241B7FB91A39829A5A2D5E84BF /* GLTFSkin.swift in Sources */,
-				762914205DDE1FEF62E84B37AA4673F0 /* GLTFTexture.swift in Sources */,
-				BD6CEBCD511214DDECFD9852F26753D9 /* GLTFTextureInfo.swift in Sources */,
-				FA53330592C897CD8CAACDA0ACBE6C6B /* GLTFTypes.swift in Sources */,
-				8CB664965B25812A28F0617C98283EDE /* GLTFUnarchiver.swift in Sources */,
+				C23778E7E595509B3B9213910F595405 /* GLTFShaderModifierFragment_alphaCutoff.shader in Resources */,
+				F46F23E431E72F3298A3AF2A40B61A35 /* GLTFShaderModifierSurface.shader in Resources */,
+				E67ADF8302908DE744F78F80FED6966E /* GLTFShaderModifierSurface_alphaModeBlend.shader in Resources */,
+				FE454FC523970E1FD075BD059DF491F9 /* GLTFShaderModifierSurface_doubleSidedWorkaround.shader in Resources */,
+				E421A3D12CEA2A0EA68C5C7B8A52265C /* GLTFShaderModifierSurface_pbrSpecularGlossiness.shader in Resources */,
+				061E02A69CD2BE5D8B8A913EAC156A64 /* GLTFShaderModifierSurface_pbrSpecularGlossiness_doubleSidedWorkaround.shader in Resources */,
+				2F52C989B492CFDC7F87DF9D87635B2D /* GLTFShaderModifierSurface_pbrSpecularGlossiness_texture_doubleSidedWorkaround.shader in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8BA0F11BE71DBED057476FA77720126B /* Sources */ = {
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A591D20953141B9EBC0A43B5A3FA23C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E4B7A75122EAB1E268FB9F57ABEA64B /* ARQuickLook-dummy.m in Sources */,
-				782CF384E84493EDE2DC6FBBEB45AA6E /* ARQuickLookController.swift in Sources */,
-				6DE26571890783B0E622762158B19CCC /* AsyncVirtualObject.swift in Sources */,
-				7A80A20382D5D233A9E4977B5F1C6603 /* FocusSquare.swift in Sources */,
-				E44A17D66A3A6B3D7FFF5AF51F84625D /* FocusSquareSegment.swift in Sources */,
-				359BFAE4E676F8A489687C60C8C84FD1 /* StatusViewController+SetupUI.swift in Sources */,
-				6A714292D80750B0E708CD856095BBA5 /* StatusViewController.swift in Sources */,
-				58523DD89F3051A386798FAC28002181 /* ThresholdPanGesture.swift in Sources */,
-				85325A3C9D8F25CD9C486C8F6A9E74F1 /* Utilities.swift in Sources */,
-				2BB36ECE3B35EA21E6666126148AC1E8 /* ViewController+Actions.swift in Sources */,
-				62F2508EC4A8CBEBD65FE3C7939E7B4D /* ViewController+ARSCNViewDelegate.swift in Sources */,
-				A2D1C1412F09CB20B7A231FC31721ED9 /* ViewController+CoachingOverlay.swift in Sources */,
-				FA7F1A39EC755239BCD7F37E78B5B713 /* ViewController+ObjectSelection.swift in Sources */,
-				6E016B5664F92559B85FD792EB58A599 /* ViewController+SetupUI.swift in Sources */,
-				E36A5315DA7DFBA0A436DA45C51BAD7D /* ViewController.swift in Sources */,
-				B995355315E0676FD21708AAB8C03032 /* VirtualObject.swift in Sources */,
-				A5F6D5D57DEA5F65668EBDF99A8F49DB /* VirtualObjectARView.swift in Sources */,
-				78BB4DD75D281611CD2616AE3E22E3C7 /* VirtualObjectInteraction.swift in Sources */,
-				7732CD76197E1E7BCE5BFCB59246F8F5 /* VirtualObjectInteractionScalable.swift in Sources */,
-				9F85AB1080BF9C00390E0B068743E268 /* VirtualObjectLoader.swift in Sources */,
-				656B590144C3ADD6540ED5ED2FB36C27 /* VirtualObjectSelection.swift in Sources */,
-				656B590144C3ADD6540ED5ED2FB36C27 /* VirtualObjectSelection.swift in Sources */,
+				D94D2A2783CB8B7A0A4EBC0B433C4A3F /* ExtensionList.swift in Sources */,
+				453EFB9A03A47538D8D254899CEA331C /* GLTFAccessor.swift in Sources */,
+				B7593F2514A729A91B34069A2F704A25 /* GLTFAccessorSparse.swift in Sources */,
+				6725A205EE2A454228521A2387968F58 /* GLTFAccessorSparseIndices.swift in Sources */,
+				072557BD0E67D04C642C22C7BDCD152E /* GLTFAccessorSparseValues.swift in Sources */,
+				C24C3F25593292D59E3E3F513B539F8F /* GLTFAnimation.swift in Sources */,
+				AA1C5E52FBF356A315134B146059BE3C /* GLTFAnimationChannel.swift in Sources */,
+				F76C3B02795FB783223F16E06CABB69F /* GLTFAnimationChannelTarget.swift in Sources */,
+				C7D96FD4135DE89DD663D553BEBCBFEE /* GLTFAnimationSampler.swift in Sources */,
+				20F34513E9B9900181B1F83724EF8983 /* GLTFAsset.swift in Sources */,
+				2FBAE4C55F3A529169A4E99D23360782 /* GLTFBuffer.swift in Sources */,
+				F2D5905A1F0399BA8F2F84F4FF23E354 /* GLTFBufferView.swift in Sources */,
+				DF6C6E623A28EE8566D21C520934CC6A /* GLTFCamera.swift in Sources */,
+				571A05BD41DCEA9E96052D4D8192524C /* GLTFCameraOrthographic.swift in Sources */,
+				1DAF133BA735FC547628941A38235881 /* GLTFCameraPerspective.swift in Sources */,
+				B823599608E5F8C0CC19D772B8A6D8E9 /* GLTFErrors.swift in Sources */,
+				4892F553CE5E88D50D8869A44D142639 /* GLTFExtension.swift in Sources */,
+				BD73566F463BB28885D495CB86B5131F /* GLTFExtras.swift in Sources */,
+				0E1E60FF8FFC76D799113B00CBB83B7E /* GLTFFunctions.swift in Sources */,
+				1B2CB52D329FA7E5EE64C86D890344F1 /* GLTFGlTF.swift in Sources */,
+				84AE52EC16551564B0499E013E3B1737 /* GLTFGlTFChildOfRootProperty.swift in Sources */,
+				E4AB42F345504B461A2F70395EA5B0F0 /* GLTFGlTFid.swift in Sources */,
+				3AC13AE783C4BCD7478B53573E334652 /* GLTFGlTFProperty.swift in Sources */,
+				FAC3495EC8B8FCEEE083A7309129053F /* GLTFImage.swift in Sources */,
+				A3BE4119A9A3C664639A18D262475E9F /* GLTFKHRMaterialsCommon_GLTFKHRMaterialsCommon.swift in Sources */,
+				021CBC1C7933535ACE0D301AB4E3AD90 /* GLTFKHRMaterialsPbrSpecularGlossiness_GLTFKHRMaterialsPbrSpecularGlossiness.swift in Sources */,
+				3E2D156844BAFF407D393A2EE4ECB1DE /* GLTFMaterial.swift in Sources */,
+				60FA7769C66D00C433C1EADB641D66EF /* GLTFMaterialNormalTextureInfo.swift in Sources */,
+				406946CB3835D5C692635A8DE9A7EFC1 /* GLTFMaterialOcclusionTextureInfo.swift in Sources */,
+				B9D6DDD1EAEA157E863B62C7BD7BE137 /* GLTFMaterialPbrMetallicRoughness.swift in Sources */,
+				387D39D5E312749508D48F39CA5DD6E4 /* GLTFMesh.swift in Sources */,
+				934C2B14A0FC2B86BE311F572AE3C93C /* GLTFMeshPrimitive.swift in Sources */,
+				DFE6251BDA0413A785E30C0491A5C9DE /* GLTFNode.swift in Sources */,
+				399873A1FDEA41CFD8A01F574A77875B /* GLTFSampler.swift in Sources */,
+				90A1879D0CCBFF487EFCFEAEA222CFDD /* GLTFScene.swift in Sources */,
+				0054D99F739FAA24F67865732D581410 /* GLTFSceneKit-dummy.m in Sources */,
+				609799E7ADAD5708FDCDC5473A2602EC /* GLTFSceneSource.swift in Sources */,
+				1840AC5501E3019E81157E9383CB169A /* GLTFSkin.swift in Sources */,
+				1F0DD643A8FA9AF77EF868D03984D8EB /* GLTFTexture.swift in Sources */,
+				83F4417142559475E905B950DA35367E /* GLTFTextureInfo.swift in Sources */,
+				050DA3885D3B39CB7713531DD12EE912 /* GLTFTypes.swift in Sources */,
+				025AB9EE64D22E4E38034A96285184A8 /* GLTFUnarchiver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -828,6 +802,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F8A47DAE1FBFB435FCC06836FA06FA5 /* Pods-ARQuickLook_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB5A10A0603B49017A51796FEAE1D37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB7CB664CDA9901702BD6B010A945CC2 /* ARQuickLook-dummy.m in Sources */,
+				8666B78965437766354DE29A16293B5C /* ARQuickLookController.swift in Sources */,
+				9CECAE09980651A79200FD0DB3F3711A /* AsyncVirtualObject.swift in Sources */,
+				FFF0DBDD274D800817D7C3ACCE0BD933 /* FocusSquare.swift in Sources */,
+				64C27B7138D014B871EE37AD5219550C /* FocusSquareSegment.swift in Sources */,
+				1133F6194D21514C2D08DD6F5871582A /* StatusViewController+SetupUI.swift in Sources */,
+				37EA0CA05156018C61EF59D3C082EE59 /* StatusViewController.swift in Sources */,
+				9653CD3F391619EB17B116C8F5DA59CF /* ThresholdPanGesture.swift in Sources */,
+				DC38EFE208B994D54A295994018F1289 /* Utilities.swift in Sources */,
+				585E4D5A2E840AA7D7D9B6B0C8208CC1 /* ViewController+Actions.swift in Sources */,
+				C42F2AD3B2E4D496ADFE3ED34E96AB01 /* ViewController+ARSCNViewDelegate.swift in Sources */,
+				6E3E94D7AD1DE1A70D56832B485DA97D /* ViewController+CoachingOverlay.swift in Sources */,
+				64BE3DCBFAB9FFCBE62CF84724CC4D72 /* ViewController+ObjectSelection.swift in Sources */,
+				5F8F9C6E30646563CFF18C4C7EEA2EEB /* ViewController+SetupUI.swift in Sources */,
+				2CBF9343615424724589FA1A1B0E2ECC /* ViewController.swift in Sources */,
+				11F3D38A053AE52A0FD415EF464DAAFD /* VirtualObject.swift in Sources */,
+				AC3303BAA7AC479BCFD03D0994C2D10C /* VirtualObjectARView.swift in Sources */,
+				0454DB02A0DB94B07A4A1CF6CF00763B /* VirtualObjectInteraction.swift in Sources */,
+				2907313DE5238123F396108187F0A45C /* VirtualObjectInteractionScalable.swift in Sources */,
+				38493B07418FD21D9D7ADCDED20CEAD3 /* VirtualObjectLoader.swift in Sources */,
+				A0987235474DD47487AD65E5F6AD626B /* VirtualObjectSelection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -848,17 +850,17 @@
 			target = 81D5592E5A469550AF83F1AE66C9B84B /* Pods-ARQuickLook_Example */;
 			targetProxy = 8E94E082D838EABA4A106F69B12B7A83 /* PBXContainerItemProxy */;
 		};
-		57BBA9FDD7D70DEDD825E09461D0E2F7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GLTFSceneKit;
-			target = 2665B1779B880B2D882474D5E6EA6B13 /* GLTFSceneKit */;
-			targetProxy = 72F695A9640BBDBD35E39D17E52C394B /* PBXContainerItemProxy */;
-		};
 		A0A18FF8F9FCFAB22F4D5186C3ED10AE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ARQuickLook;
 			target = 9FF8B5D3244D8B8A50FE0CAB50DA2710 /* ARQuickLook */;
 			targetProxy = A998ADCBB5F1FFDD41FE4F408D782B55 /* PBXContainerItemProxy */;
+		};
+		A0C67F6E0490A89F4EE9189FBA700282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GLTFSceneKit;
+			target = 2665B1779B880B2D882474D5E6EA6B13 /* GLTFSceneKit */;
+			targetProxy = 3696B35F044338C574236DEE369AC5F9 /* PBXContainerItemProxy */;
 		};
 		CBB3762132C4031D86255FED09D88E43 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -869,6 +871,38 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		02ECBB4F6E615006F237400FC72D69BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7711A9A2775BC1D83421736D13A113EE /* GLTFSceneKit.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GLTFSceneKit/GLTFSceneKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GLTFSceneKit/GLTFSceneKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GLTFSceneKit/GLTFSceneKit.modulemap";
+				PRODUCT_MODULE_NAME = GLTFSceneKit;
+				PRODUCT_NAME = GLTFSceneKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		0E4C2BE9D75034E2106568A7B9881F64 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FD35937412DB6F35E659D21D0602EA3A /* Pods-ARQuickLook_Tests.release.xcconfig */;
@@ -896,38 +930,6 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		23E9CBBC4A4008ACED143B3BF4A23860 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7711A9A2775BC1D83421736D13A113EE /* GLTFSceneKit.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GLTFSceneKit/GLTFSceneKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GLTFSceneKit/GLTFSceneKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GLTFSceneKit/GLTFSceneKit.modulemap";
-				PRODUCT_MODULE_NAME = GLTFSceneKit;
-				PRODUCT_NAME = GLTFSceneKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -990,9 +992,74 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		29B7525EF62A40EF3985E30D3A1B4894 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D926EC00AE2C9CAB146D95387EDF492 /* GLTFSceneKit.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GLTFSceneKit/GLTFSceneKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GLTFSceneKit/GLTFSceneKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GLTFSceneKit/GLTFSceneKit.modulemap";
+				PRODUCT_MODULE_NAME = GLTFSceneKit;
+				PRODUCT_NAME = GLTFSceneKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3865FCBF298D68BC3B7CE42C3FC94B0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23C347F6EA1A0EDCDB49148F85029AF8 /* ARQuickLook.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ARQuickLook/ARQuickLook-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ARQuickLook/ARQuickLook-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ARQuickLook/ARQuickLook.modulemap";
+				PRODUCT_MODULE_NAME = ARQuickLook;
+				PRODUCT_NAME = ARQuickLook;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1025,38 +1092,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9DB612E7511111422FE4676795D47611 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6A1D7FFFA16F1D909C92BF152EEE939 /* ARQuickLook.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ARQuickLook/ARQuickLook-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ARQuickLook/ARQuickLook-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ARQuickLook/ARQuickLook.modulemap";
-				PRODUCT_MODULE_NAME = ARQuickLook;
-				PRODUCT_NAME = ARQuickLook;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1198,9 +1233,9 @@
 			};
 			name = Debug;
 		};
-		E3885CA5BEFA4EA680C2626EFD3CAB95 /* Release */ = {
+		FDC57DC0DF9630D4BBA3D35DF7ADBB5E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF0212E8BBCCAFBB5307C13A1D627578 /* ARQuickLook.release.xcconfig */;
+			baseConfigurationReference = 8B7F2E3D4CA2F972804A1B58A65075D8 /* ARQuickLook.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1224,38 +1259,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E41893CA81B831F6F059237F9A3F825F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D926EC00AE2C9CAB146D95387EDF492 /* GLTFSceneKit.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GLTFSceneKit/GLTFSceneKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GLTFSceneKit/GLTFSceneKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GLTFSceneKit/GLTFSceneKit.modulemap";
-				PRODUCT_MODULE_NAME = GLTFSceneKit;
-				PRODUCT_NAME = GLTFSceneKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1283,6 +1286,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		558F6E7CFF32D8F301DEEDFF8763072D /* Build configuration list for PBXNativeTarget "GLTFSceneKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29B7525EF62A40EF3985E30D3A1B4894 /* Debug */,
+				02ECBB4F6E615006F237400FC72D69BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A220F04B82A36B518AF580173AE8DF11 /* Build configuration list for PBXNativeTarget "Pods-ARQuickLook_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1292,20 +1304,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F2D9A9711AC19D4354C32C0F94091A30 /* Build configuration list for PBXNativeTarget "ARQuickLook" */ = {
+		FB5362E125AA294EA2F58F25A1B3E62D /* Build configuration list for PBXNativeTarget "ARQuickLook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DB612E7511111422FE4676795D47611 /* Debug */,
-				E3885CA5BEFA4EA680C2626EFD3CAB95 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FA35723EFE6E484472267C21846FDE25 /* Build configuration list for PBXNativeTarget "GLTFSceneKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E41893CA81B831F6F059237F9A3F825F /* Debug */,
-				23E9CBBC4A4008ACED143B3BF4A23860 /* Release */,
+				FDC57DC0DF9630D4BBA3D35DF7ADBB5E /* Debug */,
+				3865FCBF298D68BC3B7CE42C3FC94B0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

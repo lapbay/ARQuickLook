@@ -9,20 +9,85 @@ import UIKit
 import ARKit
 
 // MARK: - ObjectCell
+@available(iOS 13.0, *)
+extension UIImageView {
+    func network(from url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFill) {
+        contentMode = .center
+        tintColor = .systemPurple
+        image = UIImage(systemName: "slowmo")
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            guard
+                let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
+                let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
+                let data = data, error == nil,
+                let image = UIImage(data: data)
+                else { return }
+            DispatchQueue.main.async() { [weak self] in
+                self?.contentMode = mode
+                self?.image = image
+            }
+        }.resume()
+    }
 
-class ObjectCell: UITableViewCell {
+    func network(from link: String, contentMode mode: UIView.ContentMode = .scaleAspectFill) {
+        guard let url = URL(string: link) else { return }
+        network(from: url, contentMode: mode)
+    }
+}
+
+@available(iOS 13.0, *)
+class ObjectCell: UICollectionViewCell {
     static let reuseIdentifier = "ObjectCell"
-    
-    @IBOutlet weak var objectTitleLabel: UILabel!
-    @IBOutlet weak var objectImageView: UIImageView!
-    @IBOutlet weak var vibrancyView: UIVisualEffectView!
-    
-    var modelName = "" {
+
+    override var isSelected: Bool {
         didSet {
-            objectTitleLabel.text = modelName.capitalized
-            objectImageView.image = UIImage(named: modelName)
+            checkmark.isHidden = !isSelected
         }
     }
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.imageView.frame = CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height)
+        self.checkmark.frame = CGRect(x: frame.size.width - 26, y: 0, width: 26, height: 24)
+
+        let titleView = UIView()
+        titleView.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.7)
+        titleView.frame = CGRect(x: 0, y: frame.size.height - 32, width: frame.size.width, height: 32)
+        self.label.frame = CGRect(x: 6, y: 0, width: frame.size.width - 12, height: 32)
+        titleView.addSubview(self.label)
+
+        self.contentView.addSubview(self.imageView)
+        self.contentView.addSubview(titleView)
+        self.contentView.addSubview(checkmark)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    var checkmark: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(systemName: "checkmark.circle.fill")
+        imageView.contentMode = .scaleAspectFit
+        imageView.tintColor = .systemPurple
+        imageView.clipsToBounds = true
+        imageView.isHidden = true
+        return imageView
+    }()
+
+    var label: UILabel = {
+        let label = UILabel()
+        label.textColor = .white
+        label.textAlignment = .natural
+        label.font = UIFont.systemFont(ofSize: 12)
+        return label
+    }()
+
+    var imageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.clipsToBounds = true
+        return imageView
+    }()
 }
 
 // MARK: - VirtualObjectSelectionViewControllerDelegate
@@ -36,10 +101,10 @@ protocol VirtualObjectSelectionViewControllerDelegate: class {
 
 /// A custom table view controller to allow users to select `VirtualObject`s for placement in the scene.
 @available(iOS 13.0, *)
-class VirtualObjectSelectionViewController: UITableViewController {
+class VirtualObjectSelectionViewController: UICollectionViewController {
     
     /// The collection of `VirtualObject`s to select from.
-    var virtualObjects = [VirtualObject]()
+    var virtualObjects = [AsyncVirtualObject]()
     
     /// The rows of the currently selected `VirtualObject`s.
     var selectedVirtualObjectRows = IndexSet()
@@ -52,17 +117,36 @@ class VirtualObjectSelectionViewController: UITableViewController {
     weak var sceneView: ARSCNView?
 
     private var lastObjectAvailabilityUpdateTimestamp: TimeInterval?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-        tableView.separatorEffect = UIVibrancyEffect(blurEffect: UIBlurEffect(style: .light))
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
-    
+
+    public init() {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        let spacing: CGFloat = 6
+        layout.minimumLineSpacing = spacing
+        layout.minimumInteritemSpacing = spacing
+        layout.sectionInset = UIEdgeInsets(top: 0, left: spacing, bottom: spacing * 2, right: spacing)
+        let size = CGSize(width: 150, height: 150)
+        layout.itemSize = size
+        layout.estimatedItemSize = size
+        super.init(collectionViewLayout: layout)
+        
+        collectionView.register(ObjectCell.self, forCellWithReuseIdentifier: ObjectCell.reuseIdentifier)
+        collectionView.backgroundColor = nil
+    }
+
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//    }
+
     override func viewWillLayoutSubviews() {
-        preferredContentSize = CGSize(width: 250, height: tableView.contentSize.height)
+        preferredContentSize = CGSize(width: collectionView.contentSize.width, height: 170)
     }
-    
+
     func updateObjectAvailability() {
         guard let sceneView = sceneView else { return }
         
@@ -76,7 +160,8 @@ class VirtualObjectSelectionViewController: UITableViewController {
         }
                 
         var newEnabledVirtualObjectRows = Set<Int>()
-        for (row, object) in VirtualObject.availableObjects.enumerated() {
+        // MARK: - ARPreview
+        for (row, object) in virtualObjects.enumerated() {
             // Enable row always if item is already placed, in order to allow the user to remove it.
             if selectedVirtualObjectRows.contains(row) {
                 newEnabledVirtualObjectRows.insert(row)
@@ -100,13 +185,13 @@ class VirtualObjectSelectionViewController: UITableViewController {
         let indexPaths = changedRows.map { row in IndexPath(row: row, section: 0) }
 
         DispatchQueue.main.async {
-            self.tableView.reloadRows(at: indexPaths, with: .automatic)
+            self.collectionView.reloadItems(at: indexPaths)
         }
     }
     
     // MARK: - UITableViewDelegate
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cellIsEnabled = enabledVirtualObjectRows.contains(indexPath.row)
         guard cellIsEnabled else { return }
         
@@ -119,51 +204,38 @@ class VirtualObjectSelectionViewController: UITableViewController {
             delegate?.virtualObjectSelectionViewController(self, didSelectObject: object)
         }
 
+        self.collectionView.reloadItems(at: [indexPath])
         dismiss(animated: true, completion: nil)
     }
         
     // MARK: - UITableViewDataSource
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return virtualObjects.count
     }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: ObjectCell.reuseIdentifier, for: indexPath) as? ObjectCell else {
+
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        // MARK: - ARPreview
+        var c = collectionView.dequeueReusableCell(withReuseIdentifier: ObjectCell.reuseIdentifier, for: indexPath) as? ObjectCell
+        if c == nil {
+            c = ObjectCell()
+        }
+        guard let cell = c else {
+//        guard let cell = tableView.dequeueReusableCell(withIdentifier: ObjectCell.reuseIdentifier, for: indexPath) as? ObjectCell else {
             fatalError("Expected `\(ObjectCell.self)` type for reuseIdentifier \(ObjectCell.reuseIdentifier). Check the configuration in Main.storyboard.")
         }
-        
-        cell.modelName = virtualObjects[indexPath.row].modelName
+        let item = virtualObjects[indexPath.row].item
+        cell.label.text = item.title
+        if let url = item.thumbnail {
+            cell.imageView.network(from: url)
+        }
 
-        if selectedVirtualObjectRows.contains(indexPath.row) {
-            cell.accessoryType = .checkmark
-        } else {
-            cell.accessoryType = .none
-        }
-        
-        let cellIsEnabled = enabledVirtualObjectRows.contains(indexPath.row)
-        if cellIsEnabled {
-            cell.vibrancyView.alpha = 1.0
-        } else {
-            cell.vibrancyView.alpha = 0.1
-        }
+        cell.isSelected = selectedVirtualObjectRows.contains(indexPath.row)
 
         return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
-        let cellIsEnabled = enabledVirtualObjectRows.contains(indexPath.row)
-        guard cellIsEnabled else { return }
-
-        let cell = tableView.cellForRow(at: indexPath)
-        cell?.backgroundColor = UIColor.lightGray.withAlphaComponent(0.5)
-    }
-    
-    override func tableView(_ tableView: UITableView, didUnhighlightRowAt indexPath: IndexPath) {
-        let cellIsEnabled = enabledVirtualObjectRows.contains(indexPath.row)
-        guard cellIsEnabled else { return }
-
-        let cell = tableView.cellForRow(at: indexPath)
-        cell?.backgroundColor = .clear
     }
 }

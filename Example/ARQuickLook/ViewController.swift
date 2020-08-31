@@ -9,19 +9,6 @@
 import UIKit
 import ARQuickLook
 
-class SimpleViewController: UIViewController {
-
-    public override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .systemBlue
-        view.frame = CGRect(x: 0, y: 0, width: 320, height: 320)
-    }
-
-    override func viewWillLayoutSubviews() {
-        preferredContentSize = CGSize(width: view.frame.size.width, height: 170)
-    }
-
-}
 
 class ViewController: UIViewController {
     private let translations: Dictionary<String, String> = [
@@ -70,17 +57,6 @@ class ViewController: UIViewController {
 
     @available(iOS 13.0, *)
     @objc func httpLaunch (sender: UIButton) {
-        let objectsViewController = SimpleViewController()
-        objectsViewController.modalTransitionStyle = .coverVertical
-        objectsViewController.modalPresentationStyle = .popover
-
-        if let popoverController = objectsViewController.popoverPresentationController {
-            popoverController.sourceView = sender
-            popoverController.sourceRect = sender.bounds
-        }
-        self.present(objectsViewController, animated: true, completion: nil)
-        return
-
         let models = [[
             "m": "https://developer.apple.com/augmented-reality/quick-look/models/cupandsaucer/cup_saucer_set.usdz",
             "tn": sampleThumbnail,
