@@ -164,7 +164,7 @@ class ViewController: UIViewController {
             }
             // MARK: - ARPreview
             if !coachingOverlay.isActive {
-                if  controller?.models?.count ?? 0 > 0 {
+                if controller?.models.count ?? 0 > 1 {
                     addObjectButton.isHidden = false
                 }else{
                     addObjectButton.isHidden = virtualObjectLoader.loadedObjects.count != 0

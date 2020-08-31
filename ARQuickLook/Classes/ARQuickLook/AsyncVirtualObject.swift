@@ -12,14 +12,13 @@ import GLTFSceneKit
 /// - Tag: Code Setup
 @available(iOS 13.0, *)
 class AsyncVirtualObject: VirtualObject {
-    var format: String
     public var maxSizeInMeters: Float = 1
     public var zoom: Float = 1
-    public var data: Dictionary<String, String>?
+    public let item: ARItem
 
-    public init?(url referenceURL: URL, format: String) {
-        self.format = format
-        super.init(url: referenceURL)
+    public init?(_ item: ARItem) {
+        self.item = item
+        super.init(url: item.path)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -42,7 +41,7 @@ class AsyncVirtualObject: VirtualObject {
     public func loadLocally(onLoaded: ((_ scene: SCNScene?) -> Void)?) {
         let uri = referenceURL
         var mode = 0
-        if (format == "GLB" || format == "GLTF") {
+        if (item.format == "GLB" || item.format == "GLTF") {
             mode = 1
         }
         do {
@@ -106,7 +105,7 @@ class AsyncVirtualObject: VirtualObject {
             guard let data = data else { return }
             //let ret = self.loadData(data, format: fmt)
             do {
-                let path = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("\(uri.lastPathComponent).\(self.format.lowercased())")
+                let path = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("\(uri.lastPathComponent).\(self.item.format.lowercased())")
                 try data.write(to: path)
                 self.referenceURL = path
                 if (onPrepared != nil) {

@@ -9,6 +9,20 @@
 import UIKit
 import ARQuickLook
 
+class SimpleViewController: UIViewController {
+
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .systemBlue
+        view.frame = CGRect(x: 0, y: 0, width: 320, height: 320)
+    }
+
+    override func viewWillLayoutSubviews() {
+        preferredContentSize = CGSize(width: view.frame.size.width, height: 170)
+    }
+
+}
+
 class ViewController: UIViewController {
     private let translations: Dictionary<String, String> = [
     "Initializing": "正在初始化",
@@ -27,19 +41,17 @@ class ViewController: UIViewController {
     "SURFACE DETECTED": "已检测到平面",
     "CANNOT PLACE OBJECT\nTry moving left or right.": "无法放置模型\n尝试向左或向右移动一下"
     ]
-
+    private let sampleThumbnail = "https://storage.googleapis.com/support-forums-api/attachment/thread-36849721-3973664935013022854.png"
 
     @available(iOS 13.0, *)
-    func launch(url: String, format: String) -> ARQuickLookController {
+    func launch(models: Array<Dictionary<String, String>>) -> ARQuickLookController {
         let settings: Dictionary<String, Any> = [
-            "url": url,
-            "format": format,
             "max": 10,
             "scale": 0.1,
             "lighting": true,
             "gestures": ["scale": true, "rotate": false, "drag": true, "tap": false]
         ]
-        let controller = ARQuickLookController(settings: settings)
+        let controller = ARQuickLookController(models: models, settings: settings)
         controller.translations = translations
         return controller
     }
@@ -57,16 +69,26 @@ class ViewController: UIViewController {
     }
 
     @available(iOS 13.0, *)
-    @objc func httpLaunch () {
-        presentLoadingIndicator()
+    @objc func httpLaunch (sender: UIButton) {
+        let objectsViewController = SimpleViewController()
+        objectsViewController.modalTransitionStyle = .coverVertical
+        objectsViewController.modalPresentationStyle = .popover
 
-        let controller = launch(url: "https://developer.apple.com/augmented-reality/quick-look/models/cupandsaucer/cup_saucer_set.usdz", format: "USDZ")
-        controller.loadUrl { success in
-            self.dismiss(animated: false) {
-                controller.launchAR(nil) {
-                    print("presented")
-                }
-            }
+        if let popoverController = objectsViewController.popoverPresentationController {
+            popoverController.sourceView = sender
+            popoverController.sourceRect = sender.bounds
+        }
+        self.present(objectsViewController, animated: true, completion: nil)
+        return
+
+        let models = [[
+            "m": "https://developer.apple.com/augmented-reality/quick-look/models/cupandsaucer/cup_saucer_set.usdz",
+            "tn": sampleThumbnail,
+            "t": "google tiger",
+        ]]
+        let controller = launch(models: models)
+        controller.launchAR(nil) {
+            print("presented")
         }
     }
 
@@ -84,7 +106,12 @@ class ViewController: UIViewController {
                 let path = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(uri.lastPathComponent)
                 try data.write(to: path)
                 DispatchQueue.main.async {
-                    let controller = self.launch(url: path.absoluteString, format: "GLB")
+                    let models = [[
+                        "m": path.absoluteString,
+                        "tn": self.sampleThumbnail,
+                        "t": "google tiger",
+                    ]]
+                    let controller = self.launch(models: models)
                     self.dismiss(animated: false) {
                         controller.launchAR(nil) {
                             print("presented")
@@ -101,21 +128,20 @@ class ViewController: UIViewController {
     @available(iOS 13.0, *)
     @objc func bundleLaunch () {
         let modelsURL = Bundle.main.url(forResource: "Models.scnassets", withExtension: nil)!
-
         let fileEnumerator = FileManager().enumerator(at: modelsURL, includingPropertiesForKeys: [])!
         let extensions = ["obj", "dae", "abc", "ply", "stl", "scn"]
-
-        let urls: [URL] = fileEnumerator.compactMap { element in
+        let models: Array<Dictionary<String, String>> = fileEnumerator.compactMap { element in
             let url = element as! URL
-
             guard extensions.contains(url.pathExtension) else { return nil }
 
-            return url
+            return [
+                "m": url.absoluteString,
+                "tn": self.sampleThumbnail,
+                "t": url.lastPathComponent,
+            ]
         }
 
-        let url = urls.randomElement()!
-
-        let controller = launch(url: url.absoluteString, format: url.pathExtension.uppercased())
+        let controller = launch(models: models)
         controller.launchAR(nil) {
             print("presented")
         }

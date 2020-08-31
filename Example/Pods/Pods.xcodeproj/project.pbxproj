@@ -133,11 +133,11 @@
 		08AD5DD39CFF3E0FD3C5A02166469CBA /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		09FD3B748512626B6B0881541FCC2320 /* GLTFSceneKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GLTFSceneKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BA0C491C708466B692F9BC5CF3E2813 /* GLTFAccessorSparse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFAccessorSparse.swift; path = Source/Common/schema/GLTFAccessorSparse.swift; sourceTree = "<group>"; };
-		0C7FF5593C2E42F811ABBBE06526A1D3 /* GLTFShaderModifierSurface_pbrSpecularGlossiness_texture_doubleSidedWorkaround.shader */ = {isa = PBXFileReference; includeInIndex = 1; name = GLTFShaderModifierSurface_pbrSpecularGlossiness_texture_doubleSidedWorkaround.shader; path = Source/Common/schema/extensions/KHR_materials_pbrSpecularGlossiness/GLTFShaderModifierSurface_pbrSpecularGlossiness_texture_doubleSidedWorkaround.shader; sourceTree = "<group>"; };
+		0C7FF5593C2E42F811ABBBE06526A1D3 /* GLTFShaderModifierSurface_pbrSpecularGlossiness_texture_doubleSidedWorkaround.shader */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GLTFShaderModifierSurface_pbrSpecularGlossiness_texture_doubleSidedWorkaround.shader; path = Source/Common/schema/extensions/KHR_materials_pbrSpecularGlossiness/GLTFShaderModifierSurface_pbrSpecularGlossiness_texture_doubleSidedWorkaround.shader; sourceTree = "<group>"; };
 		0E98F961079A17F3C5F6FE3700F7E59E /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1343C4EA90E8FE991C287D31108A83DE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		15BC3582844D0D3B68C5053B6BD1D615 /* ViewController+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ViewController+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
-		1AFC2647E29CE31F0B738A7B60124153 /* GLTFShaderModifierSurface_alphaModeBlend.shader */ = {isa = PBXFileReference; includeInIndex = 1; name = GLTFShaderModifierSurface_alphaModeBlend.shader; path = Source/Common/GLTFShaderModifierSurface_alphaModeBlend.shader; sourceTree = "<group>"; };
+		1AFC2647E29CE31F0B738A7B60124153 /* GLTFShaderModifierSurface_alphaModeBlend.shader */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GLTFShaderModifierSurface_alphaModeBlend.shader; path = Source/Common/GLTFShaderModifierSurface_alphaModeBlend.shader; sourceTree = "<group>"; };
 		1E082DC631B7387C38BBB5AE1A6C105C /* Pods-ARQuickLook_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARQuickLook_Example-frameworks.sh"; sourceTree = "<group>"; };
 		1EB7F90913EB3E0C5E7F05BB489F14B9 /* GLTFAsset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFAsset.swift; path = Source/Common/schema/GLTFAsset.swift; sourceTree = "<group>"; };
 		20FA8A91EBC98AF22D875C2DD32D7F72 /* GLTFSceneKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GLTFSceneKit-prefix.pch"; sourceTree = "<group>"; };
@@ -149,7 +149,7 @@
 		32E85DADC23BBA0667744F5FA3CF646C /* GLTFNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFNode.swift; path = Source/Common/schema/GLTFNode.swift; sourceTree = "<group>"; };
 		35C5F9EE5C74B475BC70DA6D92FC11D4 /* GLTFAnimationChannelTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFAnimationChannelTarget.swift; path = Source/Common/schema/GLTFAnimationChannelTarget.swift; sourceTree = "<group>"; };
 		39697D80BEB54A2EDDE9CDF42BC7FB14 /* GLTFGlTFid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFGlTFid.swift; path = Source/Common/schema/GLTFGlTFid.swift; sourceTree = "<group>"; };
-		39B6E5F1787D2DFC44C4508BB1822CDB /* GLTFShaderModifierSurface.shader */ = {isa = PBXFileReference; includeInIndex = 1; name = GLTFShaderModifierSurface.shader; path = Source/Common/GLTFShaderModifierSurface.shader; sourceTree = "<group>"; };
+		39B6E5F1787D2DFC44C4508BB1822CDB /* GLTFShaderModifierSurface.shader */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GLTFShaderModifierSurface.shader; path = Source/Common/GLTFShaderModifierSurface.shader; sourceTree = "<group>"; };
 		3AD300FA38901C0C1DEEFEC3F7ED7305 /* GLTFBuffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFBuffer.swift; path = Source/Common/schema/GLTFBuffer.swift; sourceTree = "<group>"; };
 		3C24664E797B76C256ABD5293073B115 /* ExtensionList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionList.swift; path = Source/Common/schema/extensions/ExtensionList.swift; sourceTree = "<group>"; };
 		3F15D7682FE36E8924094AEAF4B2C574 /* VirtualObjectLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VirtualObjectLoader.swift; sourceTree = "<group>"; };
@@ -179,17 +179,17 @@
 		7E41380CDCAC476AB1BA612A74CB7C45 /* VirtualObjectARView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VirtualObjectARView.swift; sourceTree = "<group>"; };
 		807FE42F7B0B47F7F3E07934CBDF34E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		88137DBA89824A9D79B6130DE0691FDD /* GLTFCameraPerspective.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFCameraPerspective.swift; path = Source/Common/schema/GLTFCameraPerspective.swift; sourceTree = "<group>"; };
-		8936C4A2F2D1B3FD76044307CEA87338 /* GLTFShaderModifierSurface_pbrSpecularGlossiness.shader */ = {isa = PBXFileReference; includeInIndex = 1; name = GLTFShaderModifierSurface_pbrSpecularGlossiness.shader; path = Source/Common/schema/extensions/KHR_materials_pbrSpecularGlossiness/GLTFShaderModifierSurface_pbrSpecularGlossiness.shader; sourceTree = "<group>"; };
-		893C6F45D7C673CAE638F96587E7930D /* GLTFShaderModifierSurface_pbrSpecularGlossiness_doubleSidedWorkaround.shader */ = {isa = PBXFileReference; includeInIndex = 1; name = GLTFShaderModifierSurface_pbrSpecularGlossiness_doubleSidedWorkaround.shader; path = Source/Common/schema/extensions/KHR_materials_pbrSpecularGlossiness/GLTFShaderModifierSurface_pbrSpecularGlossiness_doubleSidedWorkaround.shader; sourceTree = "<group>"; };
-		896A12B35CE6E5133FE11467DB5D885B /* ARQuickLook.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ARQuickLook.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8936C4A2F2D1B3FD76044307CEA87338 /* GLTFShaderModifierSurface_pbrSpecularGlossiness.shader */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GLTFShaderModifierSurface_pbrSpecularGlossiness.shader; path = Source/Common/schema/extensions/KHR_materials_pbrSpecularGlossiness/GLTFShaderModifierSurface_pbrSpecularGlossiness.shader; sourceTree = "<group>"; };
+		893C6F45D7C673CAE638F96587E7930D /* GLTFShaderModifierSurface_pbrSpecularGlossiness_doubleSidedWorkaround.shader */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GLTFShaderModifierSurface_pbrSpecularGlossiness_doubleSidedWorkaround.shader; path = Source/Common/schema/extensions/KHR_materials_pbrSpecularGlossiness/GLTFShaderModifierSurface_pbrSpecularGlossiness_doubleSidedWorkaround.shader; sourceTree = "<group>"; };
+		896A12B35CE6E5133FE11467DB5D885B /* ARQuickLook.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ARQuickLook.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8B818E591E0AE6DB8D946FB212E90071 /* ViewController+ObjectSelection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ViewController+ObjectSelection.swift"; sourceTree = "<group>"; };
 		8C53A93554D30F3EE6FE51220826A5F2 /* Pods-ARQuickLook_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ARQuickLook_Tests-umbrella.h"; sourceTree = "<group>"; };
 		96F52AFC0A8CB53BB0006A0A16FBB7F1 /* ARQuickLook-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ARQuickLook-Info.plist"; sourceTree = "<group>"; };
-		97F17F58F8AB6C7BD99EDB2E0AC9401E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		97F17F58F8AB6C7BD99EDB2E0AC9401E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9AB98D71A858677A9833514766C81497 /* VirtualObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VirtualObject.swift; sourceTree = "<group>"; };
 		9BFEBD7FD7A2EB5F215D6C15E66648C5 /* GLTFSceneKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GLTFSceneKit-dummy.m"; sourceTree = "<group>"; };
 		9D926EC00AE2C9CAB146D95387EDF492 /* GLTFSceneKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GLTFSceneKit.debug.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A189FD88AF04E479D22D79960D2F9F96 /* GLTFScene.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFScene.swift; path = Source/Common/schema/GLTFScene.swift; sourceTree = "<group>"; };
 		A5FF53ACA25CA49DA719FAA76616062C /* GLTFTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFTypes.swift; path = Source/Common/GLTFTypes.swift; sourceTree = "<group>"; };
 		A6A1D7FFFA16F1D909C92BF152EEE939 /* ARQuickLook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARQuickLook.debug.xcconfig; sourceTree = "<group>"; };
@@ -203,19 +203,19 @@
 		B0F6163EC5815ADF0DC0CA24DA49F9BB /* GLTFGlTFProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFGlTFProperty.swift; path = Source/Common/schema/GLTFGlTFProperty.swift; sourceTree = "<group>"; };
 		B3FB232FD8084191DA1DA8316D642209 /* ARQuickLook-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ARQuickLook-dummy.m"; sourceTree = "<group>"; };
 		B900D07B177DDD938B757A48E2372F90 /* GLTFAccessorSparseIndices.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFAccessorSparseIndices.swift; path = Source/Common/schema/GLTFAccessorSparseIndices.swift; sourceTree = "<group>"; };
-		BCAAD84BAE6A2D51A55052BDEF6320AB /* GLTFShaderModifierSurface_doubleSidedWorkaround.shader */ = {isa = PBXFileReference; includeInIndex = 1; name = GLTFShaderModifierSurface_doubleSidedWorkaround.shader; path = Source/Common/GLTFShaderModifierSurface_doubleSidedWorkaround.shader; sourceTree = "<group>"; };
+		BCAAD84BAE6A2D51A55052BDEF6320AB /* GLTFShaderModifierSurface_doubleSidedWorkaround.shader */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GLTFShaderModifierSurface_doubleSidedWorkaround.shader; path = Source/Common/GLTFShaderModifierSurface_doubleSidedWorkaround.shader; sourceTree = "<group>"; };
 		BE3AA12131389C02BEB6E794B65637A7 /* Pods-ARQuickLook_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ARQuickLook_Tests-Info.plist"; sourceTree = "<group>"; };
 		BEB296A77C566A36E5946F52F9E6B831 /* ViewController+Actions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ViewController+Actions.swift"; sourceTree = "<group>"; };
 		BF0212E8BBCCAFBB5307C13A1D627578 /* ARQuickLook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARQuickLook.release.xcconfig; sourceTree = "<group>"; };
 		BFA2A015B305F5ECEEF5D250B6CB477A /* GLTFGlTF.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFGlTF.swift; path = Source/Common/schema/GLTFGlTF.swift; sourceTree = "<group>"; };
 		C2137C1693AC732CBE68AF773BBFCFA1 /* GLTFSceneKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GLTFSceneKit-umbrella.h"; sourceTree = "<group>"; };
-		C5E35DE4235407F54F37C1E76CD49F17 /* GLTFShaderModifierFragment_alphaCutoff.shader */ = {isa = PBXFileReference; includeInIndex = 1; name = GLTFShaderModifierFragment_alphaCutoff.shader; path = Source/Common/GLTFShaderModifierFragment_alphaCutoff.shader; sourceTree = "<group>"; };
+		C5E35DE4235407F54F37C1E76CD49F17 /* GLTFShaderModifierFragment_alphaCutoff.shader */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GLTFShaderModifierFragment_alphaCutoff.shader; path = Source/Common/GLTFShaderModifierFragment_alphaCutoff.shader; sourceTree = "<group>"; };
 		CA1D22C5900FDC0631D25F2B838E33ED /* GLTFSceneSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFSceneSource.swift; path = Source/Common/GLTFSceneSource.swift; sourceTree = "<group>"; };
 		CAA27A6390E4369068CAF81B6301F8D9 /* VirtualObjectInteraction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VirtualObjectInteraction.swift; sourceTree = "<group>"; };
 		CAE004C8F7EB14EC29BEA7559781F4E0 /* GLTFSceneKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GLTFSceneKit-Info.plist"; sourceTree = "<group>"; };
-		CAF0695C24F16DCB5ADECA842270D7FD /* ARQuickLook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ARQuickLook.framework; path = ARQuickLook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAF0695C24F16DCB5ADECA842270D7FD /* ARQuickLook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ARQuickLook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D480769FED22A78CCCA86CFDC1C873E2 /* GLTFMaterialPbrMetallicRoughness.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFMaterialPbrMetallicRoughness.swift; path = Source/Common/schema/GLTFMaterialPbrMetallicRoughness.swift; sourceTree = "<group>"; };
-		D75A0B475DB30F8356AFDC79D3488DE9 /* Pods_ARQuickLook_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ARQuickLook_Tests.framework; path = "Pods-ARQuickLook_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D75A0B475DB30F8356AFDC79D3488DE9 /* Pods_ARQuickLook_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARQuickLook_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8670B1C03BAC2D09CF05EC76A69ACD5 /* VirtualObjectInteractionScalable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VirtualObjectInteractionScalable.swift; sourceTree = "<group>"; };
 		DAB5879DB9D618B31EA4CC2D8A6FAF40 /* Pods-ARQuickLook_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ARQuickLook_Example-Info.plist"; sourceTree = "<group>"; };
 		DC78B8E7313548F2166F25BA288EE4C2 /* GLTFSceneKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GLTFSceneKit.modulemap; sourceTree = "<group>"; };
@@ -227,12 +227,12 @@
 		EADE1FA895869E911B1A9169BAB84403 /* StatusViewController+SetupUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "StatusViewController+SetupUI.swift"; sourceTree = "<group>"; };
 		EC9727CAA3DBB4EFFD8B63D5AC1DBF48 /* Pods-ARQuickLook_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ARQuickLook_Example.modulemap"; sourceTree = "<group>"; };
 		EE0203D09A91A1A523D8ED8571FE7927 /* GLTFExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFExtension.swift; path = Source/Common/schema/GLTFExtension.swift; sourceTree = "<group>"; };
-		F0D508B23BDB77D59B6A86E1A7600912 /* Pods_ARQuickLook_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ARQuickLook_Example.framework; path = "Pods-ARQuickLook_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0D508B23BDB77D59B6A86E1A7600912 /* Pods_ARQuickLook_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARQuickLook_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F11EE402119DF72818919C33B8AF8B52 /* GLTFBufferView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFBufferView.swift; path = Source/Common/schema/GLTFBufferView.swift; sourceTree = "<group>"; };
 		F222C25645EEE9009C8C252F8629BDE0 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/ARKit.framework; sourceTree = DEVELOPER_DIR; };
 		F7EDECF901462DE37EDE36326ABFF1A7 /* GLTFErrors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLTFErrors.swift; path = Source/Common/GLTFErrors.swift; sourceTree = "<group>"; };
-		F85EA2C89E78C9264D51E679ADB34032 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		F8E7106D69E2E66C4CCEAEFF10F5E232 /* GLTFSceneKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GLTFSceneKit.framework; path = GLTFSceneKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F85EA2C89E78C9264D51E679ADB34032 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F8E7106D69E2E66C4CCEAEFF10F5E232 /* GLTFSceneKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GLTFSceneKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA4CFE1C724E1C1BE4CDF946ABB7C7D6 /* ARQuickLook.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ARQuickLook.modulemap; sourceTree = "<group>"; };
 		FC1EF7ECC63B37F80A7FB11990B935DE /* ViewController+SetupUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ViewController+SetupUI.swift"; sourceTree = "<group>"; };
 		FD35937412DB6F35E659D21D0602EA3A /* Pods-ARQuickLook_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARQuickLook_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -312,7 +312,6 @@
 				9AB98D71A858677A9833514766C81497 /* VirtualObject.swift */,
 				3F15D7682FE36E8924094AEAF4B2C574 /* VirtualObjectLoader.swift */,
 			);
-			name = "Virtual Objects";
 			path = "Virtual Objects";
 			sourceTree = "<group>";
 		};
@@ -346,7 +345,6 @@
 			children = (
 				08AD5DD39CFF3E0FD3C5A02166469CBA /* Utilities.swift */,
 			);
-			name = Utilities;
 			path = Utilities;
 			sourceTree = "<group>";
 		};
@@ -356,7 +354,6 @@
 				DFC6A026DD0BDC6DAAE70F620256CB02 /* StatusViewController.swift */,
 				510341D3AB6CC7CB245707A3BE2F4104 /* VirtualObjectSelection.swift */,
 			);
-			name = "Additional View Controllers";
 			path = "Additional View Controllers";
 			sourceTree = "<group>";
 		};
@@ -486,7 +483,6 @@
 				551D45FFF993F00DBED3770E9BDDF83F /* FocusSquare.swift */,
 				A8D8D97F2CFB918BD9448B19B53D9233 /* FocusSquareSegment.swift */,
 			);
-			name = "Focus Square";
 			path = "Focus Square";
 			sourceTree = "<group>";
 		};
@@ -545,7 +541,6 @@
 				5B34E398C6EE8C544109B8ED5348ACC4 /* Resources */,
 				735358B8CEB315A98AAF23A48D11B0BF /* Support Files */,
 			);
-			name = GLTFSceneKit;
 			path = GLTFSceneKit;
 			sourceTree = "<group>";
 		};
@@ -995,8 +990,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

@@ -7,6 +7,25 @@ Main view controller for the AR experience.
 
 import UIKit
 
+
+struct ARItem {
+    let url: String
+    let path: URL
+    let format: String
+    let title: String?
+    let thumbnail: String?
+
+    init(url: String, thumbnail: String? = nil, title: String? = nil) {
+        guard let path = URL(string: url) else { fatalError("Invalid url") }
+        self.url = url
+        self.path = path
+        self.format = path.pathExtension.uppercased()
+        self.thumbnail = thumbnail
+        self.title = title
+    }
+}
+
+
 @available(iOS 13.0, *)
 @objcMembers
 public class ARQuickLookController: NSObject {
@@ -15,10 +34,8 @@ public class ARQuickLookController: NSObject {
 
     public var translations: Dictionary<String, String>? = nil
     public var headers: Dictionary<String, String>? = nil
-    var models: Array<Dictionary<String, String>>? = nil
+    var models: Array<ARItem> = []
     var settings: Dictionary<String, String> = [
-        "url": "",
-        "format": "",
         "max": "10",
         "zoom": "1",
         "scale": "false",
@@ -27,36 +44,19 @@ public class ARQuickLookController: NSObject {
         "tap": "true",
         "lighting": "true",
     ]
-    var path: URL? = nil
     private var loading = false
 
     public convenience init(
-        settings: Dictionary<String, Any>,
-        onPrepared: ((_ success: Bool) -> Void)? = nil
+        models: Array<Dictionary<String, String>>,
+        settings: Dictionary<String, Any>
     ) {
         self.init()
 
-        if let format = settings["format"] as? String {
-            assert(ARQuickLookController.supportedFormat.contains(format.uppercased()), "format not supported")
-            self.settings["format"] = format.uppercased()
-        }
-
-        if let models = settings["models"] as? Array<Dictionary<String, String>> {
-            self.models = models
-        }
-        if let url = settings["url"] as? String {
-            let ul = url.lowercased()
-            assert(ul.starts(with: "http") || ul.starts(with: "file"), "url must starts with http or file")
-            self.settings["url"] = url
-            if let uri = URL(string: url) {
-                if uri.isFileURL {
-                    path = uri
-                    ensureFormat()
-                    onPrepared?(true)
-                }else if (onPrepared != nil){
-                    loadUrl(onPrepared: onPrepared)
-                }
-            }
+//        if let models = settings["models"] as? Array<Dictionary<String, String>> { }
+        for model in models {
+            let item = ARItem(url: model["m"]!, thumbnail: model["tn"], title: model["t"])
+            self.models.append(item)
+//            if self.models.count > 3 { break }
         }
 
         if let gestures = settings["gestures"] as? Dictionary<String, Bool> {
@@ -80,57 +80,48 @@ public class ARQuickLookController: NSObject {
         }
     }
 
-    private func ensureFormat() {
-        if let _ = settings["format"] {
-            return
-        }
-        let format = path!.pathExtension.uppercased()
-        assert(ARQuickLookController.supportedFormat.contains(format.uppercased()), "Format not provided, and guessed format from url is \(format), but is not supported. Please provide file format in settings dictionary.")
-        settings["format"] = format
-    }
-
-    public func loadUrl(onPrepared: ((_ success: Bool) -> Void)? = nil) {
-        if (loading || path != nil) {
-            onPrepared?(path != nil)
-            return
-        }
-        guard let url = settings["url"] else {return}
-        guard let format = settings["format"] else {return}
-        let uri = URL(string: url)!
-
-        var req = URLRequest(url: uri)
-        req.allHTTPHeaderFields = headers
-        loading = true
-
-        let task = URLSession.shared.dataTask(with: req) {(data, response, error) in
-            guard let data = data else { return }
-            //let ret = self.loadData(data, format: fmt)
-            do {
-                let path = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("\(uri.lastPathComponent).\(format.lowercased())")
-                try data.write(to: path)
-                self.path = path
-                self.ensureFormat()
-                self.loading = false
-                if (onPrepared != nil) {
-                    DispatchQueue.main.async {
-                        onPrepared?(true)
-                    }
-                }
-            } catch {
-                self.loading = false
-                print("loadUrl: \(error.localizedDescription)")
-                if (onPrepared != nil) {
-                    DispatchQueue.main.async {
-                        onPrepared?(false)
-                    }
-                }
-            }
-        }
-        task.resume()
-    }
+//    public func loadUrl(onPrepared: ((_ success: Bool) -> Void)? = nil) {
+//        if (loading) {
+//            //onPrepared?(path != nil)
+//            return
+//        }
+//        guard let url = settings["url"] else {return}
+//        guard let format = settings["format"] else {return}
+//        let uri = URL(string: url)!
+//
+//        var req = URLRequest(url: uri)
+//        req.allHTTPHeaderFields = headers
+//        loading = true
+//
+//        let task = URLSession.shared.dataTask(with: req) {(data, response, error) in
+//            guard let data = data else { return }
+//            //let ret = self.loadData(data, format: fmt)
+//            do {
+//                let path = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("\(uri.lastPathComponent).\(format.lowercased())")
+//                try data.write(to: path)
+//                self.path = path
+//                self.ensureFormat()
+//                self.loading = false
+//                if (onPrepared != nil) {
+//                    DispatchQueue.main.async {
+//                        onPrepared?(true)
+//                    }
+//                }
+//            } catch {
+//                self.loading = false
+//                print("loadUrl: \(error.localizedDescription)")
+//                if (onPrepared != nil) {
+//                    DispatchQueue.main.async {
+//                        onPrepared?(false)
+//                    }
+//                }
+//            }
+//        }
+//        task.resume()
+//    }
 
     public func launchAR(_ presenter: UIViewController?, completion: (() -> Void)? = nil) {
-        loadUrl()
+//        loadUrl()
         let ar = ViewController()
         ar.controller = self
         ar.modalPresentationStyle = .fullScreen

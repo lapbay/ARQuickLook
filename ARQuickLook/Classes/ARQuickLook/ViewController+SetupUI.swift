@@ -66,22 +66,20 @@ extension ViewController {
         guard let ctl = controller else { return }
 
         statusViewController.cancelScheduledMessage(for: .contentPlacement)
-        if ctl.models?.count ?? 0 > 0 {
+        if ctl.models.count > 1 {
             self.preparePopover()
-        }else if ctl.path != nil {
+        }else if ctl.models.count > 0 {
             self.toggleVirtualObject()
         }
     }
 
     func preparePopover() {
-        guard let ctl = controller, let models = ctl.models else { return }
-
+        guard let ctl = controller else { return }
+        let models = ctl.models
 //        guard let url = ctl.path else { return }
         if availableObjects.count != models.count {
-            for obj in models {
-                guard let url = URL(string: obj["m"]!) else { continue }
-                let object = AsyncVirtualObject(url: url, format: ctl.settings["format"]!)!
-                object.data = obj
+            for item in models {
+                let object = AsyncVirtualObject(item)!
                 if let m = ctl.settings["zoom"], let n = NumberFormatter().number(from: m)?.floatValue {
                     object.zoom = n
                 }
@@ -125,7 +123,7 @@ extension ViewController {
             popoverController.sourceRect = addObjectButton.bounds
         }
         sceneView.pause(nil)
-        self.present(objectsViewController, animated: true) { }
+        self.present(objectsViewController, animated: true, completion: nil)
     }
 
 
@@ -134,8 +132,9 @@ extension ViewController {
             removeObject(object)
         }
 
-        guard let ctl = controller, let url = ctl.path else {return}
-        let object = AsyncVirtualObject(url: url, format: ctl.settings["format"]!)!
+        guard let ctl = controller else { return }
+        let item = ctl.models.first!
+        let object = AsyncVirtualObject(item)!
         if let m = ctl.settings["zoom"], let n = NumberFormatter().number(from: m)?.floatValue {
             object.zoom = n
         }

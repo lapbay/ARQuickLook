@@ -18,7 +18,7 @@ ARQuickLook is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'ARQuickLook'
+pod "ARQuickLook"
 ```
 
 ## Author
@@ -45,14 +45,17 @@ let translations: Dictionary<String, String> = [
 "Initializing": "Inicializando",
 ]
 let settings: Dictionary<String, Any> = [
-    "url": "https://storage.googleapis.com/ar-answers-in-search-models/static/Tiger/model.glb",
-    "format": "GLB",
     "max": 1,
     "scale": 0.1,
     "lighting": false,
     "gestures": ["scale": true, "rotate": false, "drag": true, "tap": false]
 ]
-let controller = ARQuickLookController(settings: settings)
+let models: Array<Dictionary<String, String>> = [[
+    "m": "https://storage.googleapis.com/ar-answers-in-search-models/static/Tiger/model.glb",
+    "tn": "https://storage.googleapis.com/support-forums-api/attachment/thread-36849721-3973664935013022854.png",
+    "t": "google tiger",
+]]
+let controller = ARQuickLookController(models: models, settings: args)
 controller.translations = translations
 controller.launchAR(self) {
     print("presented")
@@ -66,14 +69,17 @@ controller.launchAR(self) {
 
 NSDictionary *translations = @{@"Initializing": @"Inicializando"};
 NSDictionary *settings = @{
-        @"url": @"https://storage.googleapis.com/ar-answers-in-search-models/static/Tiger/model.glb",
-        @"format": @"GLB",
         @"max": @1,
         @"scale": @1,
         @"lighting": @true,
         @"gestures": @{@"scale": @true, @"rotate": @false, @"drag": @true, @"tap": @false}
 };
-ARQuickLookController *controller = [[ARQuickLookController alloc] initWithSettings: settings translations: translations onPrepared: nil];
+NSDictionary *models = @{
+        @"m": @"https://storage.googleapis.com/ar-answers-in-search-models/static/Tiger/model.glb",
+        @"tn": @"https://storage.googleapis.com/support-forums-api/attachment/thread-36849721-3973664935013022854.png",
+        @"t": @"google tiger"
+};
+ARQuickLookController *controller = [[ARQuickLookController alloc] initWithModels: models settings: settings translations: translations onPrepared: nil];
 [controller launchAR: self completion: nil];
 
 
@@ -104,13 +110,17 @@ ARQuickLookController *controller = [[ARQuickLookController alloc] initWithSetti
 
 ```
 
+## Models fields
+
+"m": "https://storage.googleapis.com/ar-answers-in-search-models/static/Tiger/model.glb",  // required model url, support  https or file scheme , file format full options: ["GLB", "GLTF", "OBJ", "DAE", "ABC", "PLY", "STL", "USD", "USDZ", "USDA", "USDC", "SCN"]
+
+"tn": "https://storage.googleapis.com/ar-answers-in-search-models/static/Tiger/model.glb",  // optional model thumbnail url.  
+
+"t": "model title",  // optional model title.  
+
 
 ## Settings
 
-"url": "https://storage.googleapis.com/ar-answers-in-search-models/static/Tiger/model.glb",  // support  https or file scheme  
-  
-"format": "GLB",  // full options: ["GLB", "GLTF", "OBJ", "DAE", "ABC", "PLY", "STL", "USD", "USDZ", "USDA", "USDC", "SCN"]  
-  
 "max": 1,  // max size in all three dimensions in meters, models larger than this will be force resized to it.  
 
 "scale": 1,  // scale the object on loaded.  

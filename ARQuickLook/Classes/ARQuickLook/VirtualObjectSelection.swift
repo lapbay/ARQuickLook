@@ -46,7 +46,6 @@ class ObjectCell: UICollectionViewCell {
     }
 
     override init(frame: CGRect) {
-
         super.init(frame: frame)
         self.imageView.frame = CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height)
         self.checkmark.frame = CGRect(x: frame.size.width - 26, y: 0, width: 26, height: 24)
@@ -87,7 +86,6 @@ class ObjectCell: UICollectionViewCell {
     var imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.clipsToBounds = true
-        //imageView.backgroundColor = .lightGray
         return imageView
     }()
 }
@@ -127,33 +125,26 @@ class VirtualObjectSelectionViewController: UICollectionViewController {
 
     public init() {
         let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .vertical
+        layout.scrollDirection = .horizontal
+        let spacing: CGFloat = 6
+        layout.minimumLineSpacing = spacing
+        layout.minimumInteritemSpacing = spacing
+        layout.sectionInset = UIEdgeInsets(top: 0, left: spacing, bottom: spacing * 2, right: spacing)
+        let size = CGSize(width: 150, height: 150)
+        layout.itemSize = size
+        layout.estimatedItemSize = size
         super.init(collectionViewLayout: layout)
+        
+        collectionView.register(ObjectCell.self, forCellWithReuseIdentifier: ObjectCell.reuseIdentifier)
+        collectionView.backgroundColor = nil
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // MARK: - ARPreview
-        collectionView.delegate = self
-        collectionView.dataSource = self
-        collectionView.backgroundColor = .white
-        collectionView.register(ObjectCell.self, forCellWithReuseIdentifier: ObjectCell.reuseIdentifier)
-        if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-            let spacing: CGFloat = 6
-            layout.minimumLineSpacing = spacing
-            layout.minimumInteritemSpacing = spacing
-            layout.sectionInset = UIEdgeInsets(top: spacing, left: spacing, bottom: spacing, right: spacing)
-            let size = CGSize(width: 150, height: 150)
-            layout.itemSize = size
-        }
-    }
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//    }
 
     override func viewWillLayoutSubviews() {
-        preferredContentSize = CGSize(width: 320, height: collectionView.contentSize.height)
-    }
-
-    func reload() {
-        collectionView.reloadData()
+        preferredContentSize = CGSize(width: collectionView.contentSize.width, height: 170)
     }
 
     func updateObjectAvailability() {
@@ -237,35 +228,14 @@ class VirtualObjectSelectionViewController: UICollectionViewController {
 //        guard let cell = tableView.dequeueReusableCell(withIdentifier: ObjectCell.reuseIdentifier, for: indexPath) as? ObjectCell else {
             fatalError("Expected `\(ObjectCell.self)` type for reuseIdentifier \(ObjectCell.reuseIdentifier). Check the configuration in Main.storyboard.")
         }
-        if let data = virtualObjects[indexPath.row].data {
-            cell.label.text = data["t"]
-            cell.imageView.network(from: data["tn"]!)
+        let item = virtualObjects[indexPath.row].item
+        cell.label.text = item.title
+        if let url = item.thumbnail {
+            cell.imageView.network(from: url)
         }
 
         cell.isSelected = selectedVirtualObjectRows.contains(indexPath.row)
-//        let cellIsEnabled = enabledVirtualObjectRows.contains(indexPath.row)
-//        if cellIsEnabled {
-//            cell.vibrancyView.alpha = 1.0
-//        } else {
-//            cell.vibrancyView.alpha = 0.1
-//        }
 
         return cell
     }
-    
-//    override func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
-//        let cellIsEnabled = enabledVirtualObjectRows.contains(indexPath.row)
-//        guard cellIsEnabled else { return }
-//
-//        let cell = tableView.cellForRow(at: indexPath)
-//        cell?.backgroundColor = UIColor.lightGray.withAlphaComponent(0.5)
-//    }
-//
-//    override func tableView(_ tableView: UITableView, didUnhighlightRowAt indexPath: IndexPath) {
-//        let cellIsEnabled = enabledVirtualObjectRows.contains(indexPath.row)
-//        guard cellIsEnabled else { return }
-//
-//        let cell = tableView.cellForRow(at: indexPath)
-//        cell?.backgroundColor = .clear
-//    }
 }
