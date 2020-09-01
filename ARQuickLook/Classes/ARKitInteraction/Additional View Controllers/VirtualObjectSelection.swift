@@ -15,6 +15,7 @@ extension UIImageView {
         contentMode = .center
         tintColor = .systemPurple
         image = UIImage(systemName: "slowmo")
+        let tag = self.tag
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard
                 let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
@@ -23,6 +24,7 @@ extension UIImageView {
                 let image = UIImage(data: data)
                 else { return }
             DispatchQueue.main.async() { [weak self] in
+                if self?.tag != tag { return }
                 self?.contentMode = mode
                 self?.image = image
             }
@@ -132,7 +134,7 @@ class VirtualObjectSelectionViewController: UICollectionViewController {
         layout.sectionInset = UIEdgeInsets(top: 0, left: spacing, bottom: spacing * 2, right: spacing)
         let size = CGSize(width: 150, height: 150)
         layout.itemSize = size
-        layout.estimatedItemSize = size
+//        layout.estimatedItemSize = size
         super.init(collectionViewLayout: layout)
         
         collectionView.register(ObjectCell.self, forCellWithReuseIdentifier: ObjectCell.reuseIdentifier)
@@ -230,7 +232,8 @@ class VirtualObjectSelectionViewController: UICollectionViewController {
         }
         let item = virtualObjects[indexPath.row].item
         cell.label.text = item.title
-        if let url = item.thumbnail {
+        cell.imageView.tag = indexPath.row
+        if let url = item.thumbnail, url.count > 0 {
             cell.imageView.network(from: url)
         }
 

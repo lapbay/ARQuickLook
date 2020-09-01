@@ -57,11 +57,68 @@ class ViewController: UIViewController {
 
     @available(iOS 13.0, *)
     @objc func httpLaunch (sender: UIButton) {
-        let models = [[
-            "m": "https://developer.apple.com/augmented-reality/quick-look/models/cupandsaucer/cup_saucer_set.usdz",
-            "tn": sampleThumbnail,
-            "t": "google tiger",
-        ]]
+//        let models = [[
+//            "m": "https://developer.apple.com/augmented-reality/quick-look/models/cupandsaucer/cup_saucer_set.usdz",
+//            "tn": sampleThumbnail,
+//            "t": "google tiger",
+//        ]]
+        let models = [
+          [
+            "m": "https://zcpri.oss-cn-qingdao.aliyuncs.com/specs/417/0/tri/ls275.glb",
+            "t": "lifesteel",
+            "tn": "https://aifa-imgs.oss-cn-qingdao.aliyuncs.com/44d3d9e4cfae407f1f647846cfc0f731.jpg"
+          ],
+          [
+            "m": "https://zcpri.oss-cn-qingdao.aliyuncs.com/specs/3658/0/tri/38b2.glb",
+            "t": "Rosemary",
+            "tn": "https://aifa-imgs.oss-cn-qingdao.aliyuncs.com/1f26280efde26465db9209a1b8e35542.jpg"
+          ],
+          [
+            "m": "https://zcpri.oss-cn-qingdao.aliyuncs.com/specs/3135/0/tri/andersen.glb",
+            "t": "Andersen",
+            "tn": "https://aifa-imgs.oss-cn-qingdao.aliyuncs.com/4f055b6a37f67f175ed772b9360ba279.jpg"
+          ],
+          [
+            "m": "https://zcpri.oss-cn-qingdao.aliyuncs.com/specs/3114/0/tri/hanmilton3.glb",
+            "t": "hamilton",
+            "tn": "https://aifa-imgs.oss-cn-qingdao.aliyuncs.com/4d622b13704900367112d570dd88846c.jpg"
+          ],
+          [
+            "m": "https://zcpri.oss-cn-qingdao.aliyuncs.com/specs/203859/0/tri/sher.glb",
+            "t": "Sherazade",
+            "tn": "https://aifa-imgs.oss-cn-qingdao.aliyuncs.com/6585bf0710a8c95653ab7ea5ef72c862.jpg"
+          ],
+          [
+            "m": "https://zcpri.oss-cn-qingdao.aliyuncs.com/specs/3115/0/tri/benson.glb",
+            "t": "Benson",
+            "tn": "https://aifa-imgs.oss-cn-qingdao.aliyuncs.com/a0eb2146c7f886e4e93c484f6e075bc1.png"
+          ],
+          [
+            "m": "https://zcpri.oss-cn-qingdao.aliyuncs.com/specs/295/0/tri/Nigel1.glb",
+            "t": "NIGEL",
+            "tn": "https://aifa-imgs.oss-cn-qingdao.aliyuncs.com/5501232c537011e16bc621d6a362a1d4.jpg"
+          ],
+          [
+            "m": "https://zcpri.oss-cn-qingdao.aliyuncs.com/specs/2162/0/tri/otr.glb",
+            "t": "On the Rocks",
+            "tn": "https://hebenx-oss.oss-cn-qingdao.aliyuncs.com/heben_brand/1535098477145nemsHacm.jpg"
+          ],
+          [
+            "m": "https://zcpri.oss-cn-qingdao.aliyuncs.com/specs/203901/0/tri/sylvie.glb",
+            "t": "Sylvie",
+            "tn": "https://aifa-imgs.oss-cn-qingdao.aliyuncs.com/d42733523937050711075dd81afd3d50.jpg"
+          ],
+          [
+            "m": "https://zcpri.oss-cn-qingdao.aliyuncs.com/specs/578/0/tri/tobi.glb",
+            "t": "Tobi-Ishi",
+            "tn": "https://hebenx-oss.oss-cn-qingdao.aliyuncs.com/heben_brand/1527154626055OELbRjcI.jpg"
+          ],
+          [
+            "m": "https://zcpri.oss-cn-qingdao.aliyuncs.com/specs/2550/0/tri/bsmall.glb",
+            "t": "Boden",
+            "tn": "https://aiid-imgs.oss-cn-qingdao.aliyuncs.com/heben_brand/1544779118184HVVXmrrU.jpg"
+          ]
+        ]
         let controller = launch(models: models)
         controller.launchAR(nil) {
             print("presented")
